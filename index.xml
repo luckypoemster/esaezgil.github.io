@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Think-Release</title>
-    <link>http://esaezgil.github.io/index.xml</link>
+    <link>https://esaezgil.github.io/index.xml</link>
     <description>Recent content on Think-Release</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 22 Oct 2016 20:17:14 +0200</lastBuildDate>
-    <atom:link href="http://esaezgil.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://esaezgil.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hi! I&#39;m Enrique</title>
-      <link>http://esaezgil.github.io/page/enrique/</link>
+      <link>https://esaezgil.github.io/page/enrique/</link>
       <pubDate>Sat, 22 Oct 2016 20:17:14 +0200</pubDate>
       
-      <guid>http://esaezgil.github.io/page/enrique/</guid>
+      <guid>https://esaezgil.github.io/page/enrique/</guid>
       <description>&lt;p&gt;I am a telecom engineer working as a software engineer at &lt;a href=&#34;http://skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt;. This blog is just a quick reference for mainly technical stuff I find interesting. If you wanna get in touch, hit me up on &lt;a href=&#34;https://twitter.com/eqirn&#34;&gt;@equirn&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;You can find more about me listening to this podcast: &lt;a href=&#34;https://soundcloud.com/code-voyagers/episode-4-a-graduates-journey&#34;&gt;Episode 4 – A graduates journey&lt;/a&gt;&lt;/p&gt;
@@ -31,10 +31,10 @@
     
     <item>
       <title>Talk: Python Best Practices</title>
-      <link>http://esaezgil.github.io/post/python_best_practices/</link>
+      <link>https://esaezgil.github.io/post/python_best_practices/</link>
       <pubDate>Sat, 22 Oct 2016 19:37:32 +0200</pubDate>
       
-      <guid>http://esaezgil.github.io/post/python_best_practices/</guid>
+      <guid>https://esaezgil.github.io/post/python_best_practices/</guid>
       <description>&lt;p&gt;Over the last year I have attended the &lt;a href=&#34;https://www.meetup.com/python-185/&#34;&gt;Barcelona Python meetup&lt;/a&gt; hosted at &lt;a href=&#34;http://skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt;&amp;rsquo;s office.
 The meetups were a really positive experience and being a super welcoming community I decided to deliver a talk.
 &lt;/p&gt;
@@ -48,20 +48,20 @@ The meetups were a really positive experience and being a super welcoming commun
     
     <item>
       <title>Talks</title>
-      <link>http://esaezgil.github.io/page/talks/</link>
+      <link>https://esaezgil.github.io/page/talks/</link>
       <pubDate>Sat, 22 Oct 2016 18:30:50 +0200</pubDate>
       
-      <guid>http://esaezgil.github.io/page/talks/</guid>
+      <guid>https://esaezgil.github.io/page/talks/</guid>
       <description>&lt;p&gt;I delivered a short closing talk at HackUPC&amp;rsquo;16: &lt;a href=&#34;https://www.youtube.com/watch?v=PD2KGBIVbI0&amp;amp;feature=youtu.be&amp;amp;t=3664&#34;&gt;Link to talk&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Contributing to Pretix</title>
-      <link>http://esaezgil.github.io/post/contributing-to-pretix/</link>
+      <link>https://esaezgil.github.io/post/contributing-to-pretix/</link>
       <pubDate>Sun, 04 Sep 2016 13:24:25 +0000</pubDate>
       
-      <guid>http://esaezgil.github.io/post/contributing-to-pretix/</guid>
+      <guid>https://esaezgil.github.io/post/contributing-to-pretix/</guid>
       <description>&lt;p&gt;Recently I had the chance to contribute to Pretix (&lt;a href=&#34;https://pretix.eu/about/en/&#34;&gt;https://pretix.eu/about/en/&lt;/a&gt;) a Django-based event ticketing platform.&lt;/p&gt;
 
 &lt;p&gt;The Merge Request is here: &lt;a href=&#34;https://github.com/pretix/pretix/pull/204/files&#34;&gt;https://github.com/pretix/pretix/pull/204/files&lt;/a&gt;&lt;/p&gt;
@@ -103,10 +103,10 @@ _select_related:_  limited to single-valued relationships - foreign key and on
     
     <item>
       <title>Using namedtuples in aiohttp</title>
-      <link>http://esaezgil.github.io/post/using-namedtuples-in-aiohttp/</link>
+      <link>https://esaezgil.github.io/post/using-namedtuples-in-aiohttp/</link>
       <pubDate>Sat, 03 Sep 2016 14:34:00 +0000</pubDate>
       
-      <guid>http://esaezgil.github.io/post/using-namedtuples-in-aiohttp/</guid>
+      <guid>https://esaezgil.github.io/post/using-namedtuples-in-aiohttp/</guid>
       <description>&lt;p&gt;Recently I had the opportunity to contribute to the &lt;a href=&#34;https://github.com/KeepSafe/aiohttp/&#34;&gt;&lt;strong&gt;aiohttp&lt;/strong&gt; library&lt;/a&gt;. This is one of the libraries that we, the &lt;a href=&#34;https://www.skyscanner.net/hotels&#34;&gt;Hotels&lt;/a&gt; backend team at &lt;a href=&#34;https://www.skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt;, make use of on a daily basis to create a new backend service. 
 In this post I will briefly explain the main learnings from this contribution.&lt;/p&gt;
 
