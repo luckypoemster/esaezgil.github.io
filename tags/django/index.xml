@@ -30,14 +30,14 @@ More detailed info on Models here:
 
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;all keyword in Python&lt;/strong&gt;:
 In order to check whether a condition was True for all the elements of a list I simply iterated over them and checked for the condition:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f3f3&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #006699; font-weight: bold&#34;&gt;for&lt;/span&gt; i, op &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color: #336666&#34;&gt;enumerate&lt;/span&gt;(positions):
+&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f3f3&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #006699; font-weight: bold&#34;&gt;for&lt;/span&gt; i, op &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color: #336666&#34;&gt;enumerate&lt;/span&gt;(positions):
     cancelable_products&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;append(op&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;item&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;allow_cancel)
 &lt;span style=&#34;color: #006699; font-weight: bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #336666&#34;&gt;False&lt;/span&gt; &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;in&lt;/span&gt; cancelable_products:
     cancelable &lt;span style=&#34;color: #555555&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #336666&#34;&gt;False&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;However a much simpler solution making use of list comprehensions and the all() keyword in Python is possible:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f3f3&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;cancelable &lt;span style=&#34;color: #555555&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #336666&#34;&gt;all&lt;/span&gt;([op&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;item&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;allow_cancel &lt;span style=&#34;color: #006699; font-weight: bold&#34;&gt;for&lt;/span&gt; op &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;in&lt;/span&gt; positions])
+&lt;div class=&#34;highlight&#34; style=&#34;background: #f0f3f3&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;cancelable &lt;span style=&#34;color: #555555&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #336666&#34;&gt;all&lt;/span&gt;([op&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;item&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;allow_cancel &lt;span style=&#34;color: #006699; font-weight: bold&#34;&gt;for&lt;/span&gt; op &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;in&lt;/span&gt; positions])
 &lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Metaclasses in Python&lt;/strong&gt;:
