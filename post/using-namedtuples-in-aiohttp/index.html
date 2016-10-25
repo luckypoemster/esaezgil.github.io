@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Using namedtuples in aiohttp</title>
+  <title>Contributing to aiohttp</title>
 
   <meta name="author" content="Enrique Saez" />
   
@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="https://esaezgil.github.io/css/pygment_highlights.css" />
   
   
-  <meta property="og:title" content="Using namedtuples in aiohttp" />
+  <meta property="og:title" content="Contributing to aiohttp" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="/post/using-namedtuples-in-aiohttp//" />
   <meta property="og:image" content="" />
@@ -96,7 +96,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="post-heading">
-          <h1>Using namedtuples in aiohttp</h1>
+          <h1>Contributing to aiohttp</h1>
       
       
       
@@ -116,19 +116,19 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-          <p>Recently I had the opportunity to contribute to the <a href="https://github.com/KeepSafe/aiohttp/"><strong>aiohttp</strong> library</a>. This is one of the libraries that we, the <a href="https://www.skyscanner.net/hotels">Hotels</a> backend team at <a href="https://www.skyscanner.net">Skyscanner</a>, make use of on a daily basis to create a new backend service. 
-In this post I will briefly explain the main learnings from this contribution.</p>
+          <p>Recently I had the opportunity to contribute to the <a href="https://github.com/KeepSafe/aiohttp/"><strong>aiohttp</strong> library</a>. This is one of the libraries that we, the <a href="https://www.skyscanner.net/hotels">Hotels</a> backend team at <a href="https://www.skyscanner.net">Skyscanner</a>, make use of on a daily basis to create a new backend service. 
+In this post I will briefly explain the main learnings from this contribution.</p>
 
 <p>The pull request can be found here:
 <a href="https://github.com/KeepSafe/aiohttp/pull/1020/files">https://github.com/KeepSafe/aiohttp/pull/1020/files</a></p>
 
-<p>Key learnings:</p>
+<p>Key learnings:</p>
 
 <ol>
 <li><p>Living on the edge:</p>
 
-<p>Working in the <em>master</em> branch of a project means that sometimes it may be unhealthy.
-It is always good advice to check whether _master_ is healthy or not when you submit your MR to the CI system (<a href="https://travis-ci.org/KeepSafe/aiohttp">Travis CI</a> in this case) before pulling your hair searching for a non existing bug in your code.</p></li>
+<p>Working in the <em>master</em> branch of a project means that sometimes it may be unhealthy.
+It is always good advice to check whether <em>master</em> is healthy or not when you submit your MR to the CI system (<a href="https://travis-ci.org/KeepSafe/aiohttp">Travis CI</a> in this case) before pulling your hair searching for a non existing bug in your code.</p></li>
 
 <li><p>Namedtuples can be used to define a class through inheritance and by implementing the <strong>bool</strong> method,</p>
 <div class="highlight" style="background: #f0f3f3"><pre style="line-height: 125%"><span style="color: #006699; font-weight: bold">class</span> <span style="color: #00AA88; font-weight: bold">WebSocketReady</span>(namedtuple(<span style="color: #CC3300">&#39;WebSocketReady&#39;</span>, <span style="color: #CC3300">&#39;ok protocol&#39;</span>)):

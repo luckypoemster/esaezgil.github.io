@@ -72,24 +72,24 @@ _select_related:_  limited to single-valued relationships - foreign key and on
     </item>
     
     <item>
-      <title>Using namedtuples in aiohttp</title>
+      <title>Contributing to aiohttp</title>
       <link>https://esaezgil.github.io/post/using-namedtuples-in-aiohttp/</link>
       <pubDate>Sat, 03 Sep 2016 14:34:00 +0000</pubDate>
       
       <guid>https://esaezgil.github.io/post/using-namedtuples-in-aiohttp/</guid>
-      <description>&lt;p&gt;Recently I had the opportunity to contribute to the &lt;a href=&#34;https://github.com/KeepSafe/aiohttp/&#34;&gt;&lt;strong&gt;aiohttp&lt;/strong&gt; library&lt;/a&gt;. This is one of the libraries that we, the &lt;a href=&#34;https://www.skyscanner.net/hotels&#34;&gt;Hotels&lt;/a&gt; backend team at &lt;a href=&#34;https://www.skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt;, make use of on a daily basis to create a new backend service. 
-In this post I will briefly explain the main learnings from this contribution.&lt;/p&gt;
+      <description>&lt;p&gt;Recently I had the opportunity to contribute to the &lt;a href=&#34;https://github.com/KeepSafe/aiohttp/&#34;&gt;&lt;strong&gt;aiohttp&lt;/strong&gt; library&lt;/a&gt;. This is one of the libraries that we, the &lt;a href=&#34;https://www.skyscanner.net/hotels&#34;&gt;Hotels&lt;/a&gt; backend team at &lt;a href=&#34;https://www.skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt;, make use of on a daily basis to create a new backend service. 
+In this post I will briefly explain the main learnings from this contribution.&lt;/p&gt;
 
 &lt;p&gt;The pull request can be found here:
 &lt;a href=&#34;https://github.com/KeepSafe/aiohttp/pull/1020/files&#34;&gt;https://github.com/KeepSafe/aiohttp/pull/1020/files&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Key learnings:&lt;/p&gt;
+&lt;p&gt;Key learnings:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Living on the edge:&lt;/p&gt;
 
-&lt;p&gt;Working in the &lt;em&gt;master&lt;/em&gt; branch of a project means that sometimes it may be unhealthy.
-It is always good advice to check whether _master_ is healthy or not when you submit your MR to the CI system (&lt;a href=&#34;https://travis-ci.org/KeepSafe/aiohttp&#34;&gt;Travis CI&lt;/a&gt; in this case) before pulling your hair searching for a non existing bug in your code.&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;Working in the &lt;em&gt;master&lt;/em&gt; branch of a project means that sometimes it may be unhealthy.
+It is always good advice to check whether &lt;em&gt;master&lt;/em&gt; is healthy or not when you submit your MR to the CI system (&lt;a href=&#34;https://travis-ci.org/KeepSafe/aiohttp&#34;&gt;Travis CI&lt;/a&gt; in this case) before pulling your hair searching for a non existing bug in your code.&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Namedtuples can be used to define a class through inheritance and by implementing the &lt;strong&gt;bool&lt;/strong&gt; method,&lt;/p&gt;
 &lt;div class=&#34;highlight&#34; style=&#34;background: #f0f3f3&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #006699; font-weight: bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color: #00AA88; font-weight: bold&#34;&gt;WebSocketReady&lt;/span&gt;(namedtuple(&lt;span style=&#34;color: #CC3300&#34;&gt;&amp;#39;WebSocketReady&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color: #CC3300&#34;&gt;&amp;#39;ok protocol&amp;#39;&lt;/span&gt;)):
