@@ -17,9 +17,9 @@
       <guid>https://esaezgil.github.io/events/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hackupc.com/&#34;&gt;HackUPC&lt;/a&gt; is a student-led and student-oriented hackathon for tech-enthusiast held in Barcelona, at the premises of Universidad Politecnica de Catalunya over the weekend of October 1st 2016.&lt;/p&gt;
 
-&lt;p&gt;This time I attended the event as a company representative for &lt;a href=&#34;http://skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt;, the main sponsor of the event. The hackathon gathered 500 students from all over the world and was an inmense success.&lt;/p&gt;
+&lt;p&gt;I attended the event as a company representative for &lt;a href=&#34;http://skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt;, the main sponsor of the event. The hackathon gathered 500 students from all over the world and was an inmense success.&lt;/p&gt;
 
-&lt;p&gt;This was my 4th Hackathon over the last year but my first one as a sponsor and not a participant. Therefore, the event gave me the opportunity to gain a different insight for this kind of events.&lt;/p&gt;
+&lt;p&gt;This was my 4th Hackathon over the last year so far but my first one as a sponsor and not a participant. Therefore, the event gave me the opportunity to gain a different insight for this kind of events.&lt;/p&gt;
 
 &lt;p&gt;I spent about 18 hours at the event during weekend with the goal of helping participants make the most out of &lt;a href=&#34;http://en.business.skyscanner.net/&#34;&gt;Skyscanner API&lt;/a&gt;.&lt;/p&gt;
 
@@ -187,13 +187,13 @@ In this case I had written tests that checked the actual functionality on a high
       <pubDate>Wed, 25 May 2016 18:04:04 +0200</pubDate>
       
       <guid>https://esaezgil.github.io/events/thackmallorca16/</guid>
-      <description>&lt;p&gt;During Friday night May 6 through Sunday May 8 I attended &lt;a href=&#34;https://www.tnooz.com/event/thack-mallorca-2016/&#34;&gt;THack Mallorca&lt;/a&gt;, a Hackathon organized by &lt;a href=&#34;https://tnooz.com&#34;&gt;Tnooz&lt;/a&gt; a global provider of news and analysis to the travel industry.&lt;/p&gt;
+      <description>&lt;p&gt;During Friday night May 6 through Sunday May 8 I attended &lt;a href=&#34;https://www.tnooz.com/event/thack-mallorca-2016/&#34;&gt;THack Mallorca&lt;/a&gt;, a Hackathon organized by &lt;a href=&#34;https://tnooz.com&#34;&gt;Tnooz&lt;/a&gt;, a global provider of news and analysis to the travel industry.&lt;/p&gt;
 
 &lt;p&gt;During the weekend I worked almost non-stop in a 4 people team: 2 developers from &lt;a href=&#34;http://minube.com&#34;&gt;minube&lt;/a&gt; and 2 developers from &lt;a href=&#34;http://skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt; including myself.&lt;/p&gt;
 
 &lt;p&gt;After discussing different sort of ideas during a quick brain storming session, we agreed on creating a new product targeting travelers who prioritize activities over sightseeing. We also tried to maximize our ROI by consuming three external APIs from different sponsors. The team developed an internal API that suggested the best hotel based on the location of the activities chosen by the user and I developed an Android app consuming the team&amp;rsquo;s API.&lt;/p&gt;
 
-&lt;p&gt;Overall, it was a great but exhausting experience in terms of working in an extremely fast paced environment and collaborating with other developers inmersed in the travel industry. We also had the chance to talk to many competing teams composed of people coming from other companies like Trivago or Viajes el Corte Ingles.&lt;/p&gt;
+&lt;p&gt;Overall, it was a great but exhausting experience in terms of working in an extremely fast paced environment and collaborating with other developers inmersed in the travel industry. We also had the chance to talk to many competing teams coming from other companies like Trivago or Viajes el Corte Ingles.&lt;/p&gt;
 
 &lt;p&gt;These events are quite refreshing as it allows to somehow blur the self-imposed limitations that are inherent to working in big companies with clear goals.&lt;/p&gt;
 
@@ -205,11 +205,11 @@ In this case I had written tests that checked the actual functionality on a high
 &lt;li&gt;First prize from &lt;a href=&#34;http://booking.com&#34;&gt;Booking.com&lt;/a&gt; for best API feedback&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;I had a great time during this event and would gladly join again in the future.&lt;/p&gt;
+
 &lt;p&gt;Check the presentation we did for the final pitch:&lt;/p&gt;
 
 &lt;script async class=&#39;speakerdeck-embed&#39; data-id=&#39;f96342f403e34a488e49bf296bbc1581&#39; data-ratio=&#39;1.33333333333333&#39; src=&#39;//speakerdeck.com/assets/embed.js&#39;&gt;&lt;/script&gt;
-
-&lt;p&gt;I had a great time during this event and would gladly join again in the future.&lt;/p&gt;
 </description>
     </item>
     
