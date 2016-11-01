@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Think-Release</title>
+    <title>Hej, I&#39;m Enrique</title>
     <link>https://esaezgil.github.io/index.xml</link>
-    <description>Recent content on Think-Release</description>
+    <description>Recent content on Hej, I&#39;m Enrique</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Oct 2016 18:34:25 +0200</lastBuildDate>
@@ -41,7 +41,7 @@ Looking forward to attend another hackathon soon enough!&lt;/p&gt;
     </item>
     
     <item>
-      <title>Hi! I&#39;m Enrique</title>
+      <title>About me</title>
       <link>https://esaezgil.github.io/page/enrique/</link>
       <pubDate>Sat, 22 Oct 2016 20:17:14 +0200</pubDate>
       
