@@ -6,8 +6,71 @@
     <description>Recent content on Hej, I&#39;m Enrique</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Oct 2016 18:34:25 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 22 Nov 2016 18:04:04 +0200</lastBuildDate>
     <atom:link href="https://esaezgil.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>LauzHack - Nov&#39;16</title>
+      <link>https://esaezgil.github.io/events/</link>
+      <pubDate>Tue, 22 Nov 2016 18:04:04 +0200</pubDate>
+      
+      <guid>https://esaezgil.github.io/events/</guid>
+      <description>&lt;p&gt;This past weekend, 18th - 20th November, I attended &lt;a href=&#34;http://lauzhack.com&#34;&gt;Lauzhack&lt;/a&gt;, a student-organized and student-oriented Hackathon in Lausanne, Switzerland, as a &lt;a href=&#34;http://skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt; representative.&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Such lovely weather! Hackers at &lt;a href=&#34;https://twitter.com/LauzHack&#34;&gt;@LauzHack&lt;/a&gt;, check out the view! The Alps are are visible in all their glory! &lt;a href=&#34;https://twitter.com/hashtag/HackTheAlps?src=hash&#34;&gt;#HackTheAlps&lt;/a&gt; &lt;a href=&#34;https://t.co/32quDX60eW&#34;&gt;pic.twitter.com/32quDX60eW&lt;/a&gt;&lt;/p&gt;&amp;mdash; LauzHack (@LauzHack) &lt;a href=&#34;https://twitter.com/LauzHack/status/799973200994140160&#34;&gt;November 19, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;The goal of the Hackathon, was to encourage students from all over the world to work in a project over the weekend with the aim of networking, learning as much as possible and have fun in the mean time.&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;HackerSpace :D&lt;a href=&#34;https://twitter.com/hashtag/JustBuildIt?src=hash&#34;&gt;#JustBuildIt&lt;/a&gt; &lt;a href=&#34;https://t.co/jSildNCCBE&#34;&gt;pic.twitter.com/jSildNCCBE&lt;/a&gt;&lt;/p&gt;&amp;mdash; LauzHack (@LauzHack) &lt;a href=&#34;https://twitter.com/LauzHack/status/799984109414191104&#34;&gt;November 19, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;I attended with my colleague &lt;a href=&#34;https://twitter.com/blckdt&#34;&gt;Manuel Miranda&lt;/a&gt; in order to help hackers make use of the Skyscanner API in their projects. We also looked forward to spread the word about &lt;a href=&#34;(http://skyscanner.net/jobs/graduates/)&#34;&gt;Skyscanner graduate program&lt;/a&gt;, &lt;a href=&#34;http://skyscanner.net/jobs/graduates/&#34;&gt;Skyscanner internships&lt;/a&gt; and company culture.&lt;/p&gt;
+
+&lt;p&gt;During the weekend we had the chance to address students in both the initial talk and in a tech talk. I delivered a tech talk in order to get hackers up and running in about 20 minutes with the Skyscanner API and its different endpoints.&lt;/p&gt;
+
+&lt;p&gt;These are the slides for the presentation:&lt;/p&gt;
+
+&lt;script async class=&#39;speakerdeck-embed&#39; data-id=&#39;6ebaec24d33a4a1f91b41a683d26f6f1&#39; data-ratio=&#39;1.33333333333333&#39; src=&#39;//speakerdeck.com/assets/embed.js&#39;&gt;&lt;/script&gt;
+
+&lt;p&gt;During the rest of the weekend we tended to questions that hackers came up with during the development of their projects. It is a truly enriching experience when people find new usages for the provided data and it is specially valuable when some of them even find bugs that we can report back to our colleagues!&lt;/p&gt;
+
+&lt;p&gt;The event itself was really well organized and the premises of &lt;a href=&#34;http://www.epfl.ch/index.en.html&#34;&gt;EPFL&lt;/a&gt; are top notch.&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Come have a chat with our sponsors at their booths about the cool tech they brought! &lt;a href=&#34;https://t.co/ZBamhr0Jom&#34;&gt;pic.twitter.com/ZBamhr0Jom&lt;/a&gt;&lt;/p&gt;&amp;mdash; LauzHack (@LauzHack) &lt;a href=&#34;https://twitter.com/LauzHack/status/799917130468556800&#34;&gt;November 19, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;The projects I liked the most using &lt;a href=&#34;http://business.skyscanner.net/&#34;&gt;Skyscanner API&lt;/a&gt; were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://devpost.com/software/travcal-boxpea&#34;&gt;TravCal&lt;/a&gt;: after setting the departure airport, Travcal queries for cached ticket prices and Hotel prices in different destinations and suggests tentative trips along its fares in your calendar. It was quite clever of them to make use of the calendar as it is instantly multi-device compliant from the very beginning. They won our Skyscanner challenge prize.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://devpost.com/software/buddyflights&#34;&gt;BuddyFlights&lt;/a&gt;: the project suggests based on your Facebook friends&amp;rsquo; location intermediate stops for your journey along the price of the tickets. I love the idea and I hope that these guys keep working on it or even helps inspire our internal team in charge of the inspiration map in the website.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://devpost.com/software/citymatch&#34;&gt;CityMatch&lt;/a&gt;: this project included gamification in order to suggest travel destinations making use of Microsoft Cognitive services. I was instantly sold into the idea and hope that they keep working on it in the future.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The projects I liked the most using other sponsor&amp;rsquo;s APIs were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://devpost.com/software/will-i-be-late&#34;&gt;WillIbeLate&lt;/a&gt;: making use of SBB data to predict train delays based on the day, the route and the weather.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://devpost.com/software/openallergies&#34;&gt;OpenAllergies&lt;/a&gt;: making use of the recently launched &lt;a href=&#34;https://www.openfood.ch/&#34;&gt;OpenFood&lt;/a&gt; API they warn the user about possible allergies by scanning a product&amp;rsquo;s barcode.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My take out points:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;As a sponsor I really enjoyed the event. I had the chance to learn about challenges other sponsors face on a daily basis and found out about new cool technologies and products they are developing.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;This is my 5th Hackathon over the last year (2nd as sponsor) and I keep enjoying the thrill and out of the box thinking fostered by this kind of events.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Hackathons set the perfect ambiance for innovation. Working within a strict timeframe helps effectively deliver the basics of an impactful product.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Looking forward to LauzHack&amp;rsquo;17&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>HackUPC&#39;16</title>
@@ -18,6 +81,9 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://hackupc.com/&#34;&gt;HackUPC&lt;/a&gt; is a student-led and student-oriented hackathon for tech-enthusiast held in Barcelona, at the premises of Universitat Politecnica de Catalunya over the weekend of October 1st 2016.&lt;/p&gt;
 
 &lt;p&gt;I attended the event as a company representative for &lt;a href=&#34;http://skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt;, the main sponsor of the event. The hackathon gathered 500 students from all over the world and was an immense success.&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;HackUPC Fall 2016 opening ceremony is about to start. The auditorium is filled with excitement! &lt;a href=&#34;https://t.co/FWxtD0YEfX&#34;&gt;pic.twitter.com/FWxtD0YEfX&lt;/a&gt;&lt;/p&gt;&amp;mdash; HackUPC (@hackupc) &lt;a href=&#34;https://twitter.com/hackupc/status/784441926577717248&#34;&gt;October 7, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
 
 &lt;p&gt;This was my 4th hackathon over the last year so far but my first one as a sponsor and not a participant. Therefore, the event gave me the opportunity to gain a different insight for this kind of events.&lt;/p&gt;
 
