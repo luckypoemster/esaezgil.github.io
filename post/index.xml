@@ -6,8 +6,73 @@
     <description>Recent content in Post-rsses on Hej, I&#39;m Enrique</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Oct 2016 19:37:32 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 01 Dec 2016 19:55:00 +0100</lastBuildDate>
     <atom:link href="https://esaezgil.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Madrid Python Meetup</title>
+      <link>https://esaezgil.github.io/post/python_meetup_madrid/</link>
+      <pubDate>Thu, 01 Dec 2016 19:55:00 +0100</pubDate>
+      
+      <guid>https://esaezgil.github.io/post/python_meetup_madrid/</guid>
+      <description>&lt;p&gt;Last November I attended the &lt;a href=&#34;https://www.meetup.com/Madrid-Python-Meetup/events/235214434/&#34;&gt;Madrid Python Meetup&lt;/a&gt;. Being a regular attendant of &lt;a href=&#34;https://www.meetup.com/python-185/&#34;&gt;Barcelona Python Meetup&lt;/a&gt; I was curious about the Python community in Madrid.
+&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;After many &lt;a href=&#34;https://twitter.com/pybcn&#34;&gt;@pybcn&lt;/a&gt; meetups, my first &lt;a href=&#34;https://twitter.com/python_madrid&#34;&gt;@python_madrid&lt;/a&gt; meetup. Really welcoming community &lt;a href=&#34;https://twitter.com/hashtag/python?src=hash&#34;&gt;#python&lt;/a&gt; &lt;a href=&#34;https://t.co/mhTLMDou4Q&#34;&gt;pic.twitter.com/mhTLMDou4Q&lt;/a&gt;&lt;/p&gt;&amp;mdash; Enrique (@eqirn) &lt;a href=&#34;https://twitter.com/eqirn/status/804019613868716032&#34;&gt;November 30, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;There were four talks, all of them revolving around Python and Geographic Information Systems. This was a topic that I have not dealt with at all and was curious about what Python can help with.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1st talk&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;es&#34; dir=&#34;ltr&#34;&gt;¡Empieza la reunión de &lt;a href=&#34;https://twitter.com/python_madrid&#34;&gt;@python_madrid&lt;/a&gt; y &lt;a href=&#34;https://twitter.com/GeoinquietosMad&#34;&gt;@GeoinquietosMad&lt;/a&gt; en la sede de &lt;a href=&#34;https://twitter.com/CARTO&#34;&gt;@CARTO&lt;/a&gt;! &lt;a href=&#34;https://t.co/eX1tKVoMOr&#34;&gt;pic.twitter.com/eX1tKVoMOr&lt;/a&gt;&lt;/p&gt;&amp;mdash; Pybonacci (@Pybonacci) &lt;a href=&#34;https://twitter.com/Pybonacci/status/804023120478830594&#34;&gt;November 30, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/guillemborrell&#34;&gt;Guillem Borrell&lt;/a&gt; talked about whether Madrid pollution measurements were being rigged by the government. He showed how most of the pollution meters were placed further away from the city center and after analyzing historical measurements with the help of Python, concluded that apparently it was not the case.&lt;/p&gt;
+
+&lt;p&gt;The most important take outs from his talk for me were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The data model and the obfuscation of the data in it can be part of the business model. By hindering competitors from using/accessing the data that is supposed to be freely available, such as the pollution measurements in this case, competitors can not&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Data Science consists on Data cleaning most of the time rather than creating/implementing new fancy algorithms which was quite surprising for me.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;2nd talk&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;es&#34; dir=&#34;ltr&#34;&gt;Continúa Juan Luis (no &lt;a href=&#34;https://twitter.com/astrojuanlu&#34;&gt;@astrojuanlu&lt;/a&gt;) en &lt;a href=&#34;https://twitter.com/python_madrid&#34;&gt;@python_madrid&lt;/a&gt; hablando de Cartopy y proyecciones &lt;a href=&#34;https://twitter.com/GeoinquietosMad&#34;&gt;@GeoinquietosMad&lt;/a&gt; &lt;a href=&#34;https://t.co/PvZCbUNObn&#34;&gt;pic.twitter.com/PvZCbUNObn&lt;/a&gt;&lt;/p&gt;&amp;mdash; Pybonacci (@Pybonacci) &lt;a href=&#34;https://twitter.com/Pybonacci/status/804026521698582528&#34;&gt;November 30, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Juan Luis Ribero talked about geo referenced data visualization with Python. It was a really in-depth and long talk in which he explained:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the basics such as map projections like Mercator, Universal Transverse Mercator, Web Mercator, etc.&lt;/li&gt;
+&lt;li&gt;detailed Cartopy API and the different data transformations that it helps accomplish&lt;/li&gt;
+&lt;li&gt;talked through some examples using Cartopy, open data from the regional government to create some cool visualizations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;3rd talk&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/oriolbx&#34;&gt;Oriol Boix&lt;/a&gt; briefly explained the Carto API. The Meetup was hosted at &lt;a href=&#34;https://carto.com/&#34;&gt;Carto&amp;rsquo;s&lt;/a&gt; office so it was rather natural that they put together a talk about their product.&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;es&#34; dir=&#34;ltr&#34;&gt;Continuamos hablando del nuevo SDK de &lt;a href=&#34;https://twitter.com/CARTO&#34;&gt;@CARTO&lt;/a&gt; en &lt;a href=&#34;https://twitter.com/python_madrid&#34;&gt;@python_madrid&lt;/a&gt; &lt;a href=&#34;https://twitter.com/GeoinquietosMad&#34;&gt;@GeoinquietosMad&lt;/a&gt; &lt;a href=&#34;https://t.co/jqz23yUAfO&#34;&gt;pic.twitter.com/jqz23yUAfO&lt;/a&gt;&lt;/p&gt;&amp;mdash; Pybonacci (@Pybonacci) &lt;a href=&#34;https://twitter.com/Pybonacci/status/804034266468352000&#34;&gt;November 30, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;4th talk&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/fran_raga&#34;&gt;Francisco José Raga&lt;/a&gt; explained how to create Plugins for &lt;a href=&#34;http://qgis.org/en/site/&#34;&gt;QGIS&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The main learning I got from his talk is that the IDE should be considered as an extendable tool and whenever a developer finds himself doing something over and over again is much better to develop a plugin to automate the job.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Overall the topics discussed in the Meetup were not interesting for my day to day work but it was refreshing to learn about people using Python for so many different things.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://carto.com/&#34;&gt;Carto&amp;rsquo;s&lt;/a&gt; office in the very city Center of Madrid were really cool by the way.&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;es&#34; dir=&#34;ltr&#34;&gt;&amp;quot;Hacer un plugin en &lt;a href=&#34;https://twitter.com/qgis&#34;&gt;@qgis&lt;/a&gt; es muy fácil&amp;quot; -Rafa (no me acuerdo de tu tuiter) &lt;a href=&#34;https://twitter.com/GeoinquietosMad&#34;&gt;@GeoinquietosMad&lt;/a&gt; &lt;a href=&#34;https://twitter.com/python_madrid&#34;&gt;@python_madrid&lt;/a&gt; &lt;a href=&#34;https://t.co/2gP0ba35eV&#34;&gt;pic.twitter.com/2gP0ba35eV&lt;/a&gt;&lt;/p&gt;&amp;mdash; Ramiro Aznar (@ramiroaznar) &lt;a href=&#34;https://twitter.com/ramiroaznar/status/804043732165206016&#34;&gt;November 30, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;</description>
+    </item>
     
     <item>
       <title>Talk: Python Best Practices</title>
