@@ -212,7 +212,9 @@ The meetups were a really positive experience and being a super welcoming commun
 
 &lt;p&gt;&lt;strong&gt;Slides:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;script async class=&#39;speakerdeck-embed&#39; data-id=&#39;2e42ac8c87a24bc3ad90cc5a40cc894a&#39; data-ratio=&#39;1.33333333333333&#39; src=&#39;//speakerdeck.com/assets/embed.js&#39;&gt;&lt;/script&gt;&lt;/p&gt;</description>
+&lt;script async class=&#39;speakerdeck-embed&#39; data-id=&#39;2e42ac8c87a24bc3ad90cc5a40cc894a&#39; data-ratio=&#39;1.33333333333333&#39; src=&#39;//speakerdeck.com/assets/embed.js&#39;&gt;&lt;/script&gt;
+
+&lt;p&gt;Unfortunately due to technical problems the talk was not recorded :(&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -384,6 +386,22 @@ In this case I had written tests that checked the actual functionality on a high
 &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;I really enjoyed going through &lt;a href=&#34;https://jeffknupp.com/blog/archives/&#34;&gt;Jeff’s posts&lt;/a&gt;. His book although concise it is straight to the point, laying out important fundamentals in a clear way.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/51G2L3Ghp5L._SX322_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Effective Python by Brett Slatkin&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;Listening to &lt;a href=&#34;https://twitter.com/haxor&#34;&gt;Brett&lt;/a&gt; on the &lt;a href=&#34;https://twitter.com/TalkPython&#34;&gt;@TalkPython&lt;/a&gt; &lt;a href=&#34;https://talkpython.fm/episodes/show/25/effective-python&#34;&gt;Podcast episode #25&lt;/a&gt; was pretty inspirational, starting from scratch with Python at his job at Google to leading teams and launching App Engine. I had to read his book and I am enjoying it and learning a lot.&lt;/p&gt;
 </description>
     </item>
     
