@@ -333,10 +333,10 @@ In this case I had written tests that checked the actual functionality on a high
       <guid>https://esaezgil.github.io/events/thackmallorca16/</guid>
       <description>&lt;p&gt;During Friday night May 6 through Sunday May 8 I attended &lt;a href=&#34;https://www.tnooz.com/event/thack-mallorca-2016/&#34;&gt;THack Mallorca&lt;/a&gt;, a Hackathon organized by &lt;a href=&#34;https://tnooz.com&#34;&gt;Tnooz&lt;/a&gt;, a global provider of news and analysis to the travel industry.&lt;/p&gt;
 
-&lt;p&gt;During the weekend I worked almost non-stop in a 4 people team: 2 developers from &lt;a href=&#34;http://minube.com&#34;&gt;minube&lt;/a&gt; and 2 developers from &lt;a href=&#34;http://skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt; including myself.&lt;/p&gt;
-
-&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Time to code! More than 100 students&amp;amp; professionals are competiting for wining different prices as of 5,000 euros &lt;a href=&#34;https://twitter.com/hashtag/ThackMallorca16?src=hash&#34;&gt;#ThackMallorca16&lt;/a&gt;&lt;/p&gt;&amp;mdash; APItude by Hotelbeds (@Hotelbeds_API) &lt;a href=&#34;https://twitter.com/Hotelbeds_API/status/728899724145725440&#34;&gt;May 7, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;More than 100 pro and student devs signed up for &lt;a href=&#34;https://twitter.com/hashtag/thackmallorca?src=hash&#34;&gt;#thackmallorca&lt;/a&gt; &lt;a href=&#34;https://twitter.com/tnooz&#34;&gt;@tnooz&lt;/a&gt; &lt;a href=&#34;https://t.co/SajkdBcivu&#34;&gt;pic.twitter.com/SajkdBcivu&lt;/a&gt;&lt;/p&gt;&amp;mdash; Gene Quinn (@genequinn) &lt;a href=&#34;https://twitter.com/genequinn/status/728798299474546688&#34;&gt;May 7, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;During the weekend I worked almost non-stop in a 4 people team: 2 developers from &lt;a href=&#34;http://minube.com&#34;&gt;minube&lt;/a&gt; and 2 developers from &lt;a href=&#34;http://skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt; including myself.&lt;/p&gt;
 
 &lt;p&gt;After discussing different sort of ideas during a quick brain storming session, we agreed on creating a new product targeting travelers who prioritize activities over sightseeing. We also tried to maximize our ROI by consuming three external APIs from different sponsors. The team developed an internal API that suggested the best hotel based on the location of the activities chosen by the user and I developed an Android app consuming the team&amp;rsquo;s API.&lt;/p&gt;
 
@@ -352,10 +352,15 @@ In this case I had written tests that checked the actual functionality on a high
 &lt;li&gt;First prize from &lt;a href=&#34;http://booking.com&#34;&gt;Booking.com&lt;/a&gt; for best API feedback&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Proud to be part of team TechnoBeatles at &lt;a href=&#34;https://twitter.com/hashtag/THackMallorca?src=hash&#34;&gt;#THackMallorca&lt;/a&gt;. We won 3 prizes! Thanks &lt;a href=&#34;https://twitter.com/tnooz&#34;&gt;@tnooz&lt;/a&gt; for organising an awesome event!&lt;/p&gt;&amp;mdash; Tudor Barbu (@motanelu) &lt;a href=&#34;https://twitter.com/motanelu/status/729330943937417216&#34;&gt;May 8, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Time to code! More than 100 students&amp;amp; professionals are competiting for wining different prices as of 5,000 euros &lt;a href=&#34;https://twitter.com/hashtag/ThackMallorca16?src=hash&#34;&gt;#ThackMallorca16&lt;/a&gt;&lt;/p&gt;&amp;mdash; APItude by Hotelbeds (@Hotelbeds_API) &lt;a href=&#34;https://twitter.com/Hotelbeds_API/status/728899724145725440&#34;&gt;May 7, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ht&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/thackmallorca?src=hash&#34;&gt;#thackmallorca&lt;/a&gt; kicks off with &lt;a href=&#34;https://t.co/fda8NUftuo&#34;&gt;https://t.co/fda8NUftuo&lt;/a&gt; API prezo &lt;a href=&#34;https://twitter.com/tnooz&#34;&gt;@tnooz&lt;/a&gt; &lt;a href=&#34;https://t.co/jvXH5rIbPX&#34;&gt;pic.twitter.com/jvXH5rIbPX&lt;/a&gt;&lt;/p&gt;&amp;mdash; Gene Quinn (@genequinn) &lt;a href=&#34;https://twitter.com/genequinn/status/728876062680190976&#34;&gt;May 7, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
 
 &lt;p&gt;I had a great time during this event and would gladly join again in the future.&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Proud to be part of team TechnoBeatles at &lt;a href=&#34;https://twitter.com/hashtag/THackMallorca?src=hash&#34;&gt;#THackMallorca&lt;/a&gt;. We won 3 prizes! Thanks &lt;a href=&#34;https://twitter.com/tnooz&#34;&gt;@tnooz&lt;/a&gt; for organising an awesome event!&lt;/p&gt;&amp;mdash; Tudor Barbu (@motanelu) &lt;a href=&#34;https://twitter.com/motanelu/status/729330943937417216&#34;&gt;May 8, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
 
 &lt;p&gt;Check the presentation we did for the final pitch:&lt;/p&gt;
 
