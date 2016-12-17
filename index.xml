@@ -333,6 +333,10 @@ The meetups were a really positive experience and being a super welcoming commun
 
 &lt;script async class=&#39;speakerdeck-embed&#39; data-id=&#39;2e42ac8c87a24bc3ad90cc5a40cc894a&#39; data-ratio=&#39;1.33333333333333&#39; src=&#39;//speakerdeck.com/assets/embed.js&#39;&gt;&lt;/script&gt;
 
+&lt;p&gt;&lt;strong&gt;GitHub repo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/esaezgil/pythonBestPractices&#34;&gt;https://github.com/esaezgil/pythonBestPractices&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;Unfortunately due to technical problems the talk was not recorded :(&lt;/p&gt;</description>
     </item>
     
@@ -493,7 +497,24 @@ In this case I had written tests that checked the actual functionality on a high
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://esaezgil.github.io/page/books/</guid>
-      <description>&lt;p&gt;This is a brief list of the books I have read recently:&lt;/p&gt;
+      <description>&lt;p&gt;Find more about the books I have enjoyed lately:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://esaezgil.github.io/page/books_finished/&#34;&gt;Books I have read&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://esaezgil.github.io/page/next_books/&#34;&gt;Books I want to read next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Please suggest me some new readings in the comments :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Current and past books</title>
+      <link>https://esaezgil.github.io/page/books_finished/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esaezgil.github.io/page/books_finished/</guid>
+      <description>&lt;p&gt;This is a brief list of the books I have read recently or I am reading at the moment:&lt;/p&gt;
 
 &lt;p&gt;&lt;center&gt;
 &lt;figure &gt;
@@ -526,6 +547,109 @@ In this case I had written tests that checked the actual functionality on a high
 &lt;/center&gt;&lt;/p&gt;
 
 &lt;p&gt;Listening to &lt;a href=&#34;https://twitter.com/haxor&#34;&gt;Brett&lt;/a&gt; on the &lt;a href=&#34;https://twitter.com/TalkPython&#34;&gt;@TalkPython&lt;/a&gt; &lt;a href=&#34;https://talkpython.fm/episodes/show/25/effective-python&#34;&gt;Podcast episode #25&lt;/a&gt; was pretty inspirational, starting from scratch with Python at his job at Google to leading teams and launching App Engine. I had to read his book and I am enjoying it and learning a lot.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/5182TyS6gJL._SX379_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;The Hitchhiker&amp;#39;s Guide to Python by Kenneth Reitz&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/center&gt;
+In one of our projects at &lt;a href=&#34;https://www.skyscanner.net/hotels&#34;&gt;Skyscanner Hotels&lt;/a&gt; we make use of &lt;a href=&#34;https://twitter.com/kennethreitz&#34;&gt;Kenneth Reitz&amp;rsquo;s&lt;/a&gt; libraries: &lt;a href=&#34;https://github.com/kennethreitz/requests&#34;&gt;Requests&lt;/a&gt;. That is how I found out about his book &lt;a href=&#34;http://docs.python-guide.org/en/latest/&#34;&gt;The Hitchhiker’s Guide to Python&lt;/a&gt; that I made use extensively while preparing my &lt;a href=&#34;https://esaezgil.github.io/post/python_best_practices/&#34;&gt;Python Best Practices&lt;/a&gt; talk.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/51QNzJpNNvL._SX373_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Python 101 by Michael Driscoll&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/center&gt;
+Another book which I read through for my &lt;a href=&#34;https://esaezgil.github.io/post/python_best_practices/&#34;&gt;Python Best Practices&lt;/a&gt; talk.
+&lt;center&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://thehackerguidetopython.com/img/the-hacker-guide-to-python-darken-v2.png&#34; width=&#34;220&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;The hacker&amp;#39;s Guide to Python&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/center&gt;
+I also made use of Julien Danjou&amp;rsquo;s &lt;a href=&#34;https://thehackerguidetopython.com/&#34;&gt;The hacker&amp;rsquo;s Guide to Python&lt;/a&gt; for preparing the &lt;a href=&#34;https://esaezgil.github.io/post/python_best_practices/&#34;&gt;Python Best Practices&lt;/a&gt; talk.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/51WiLueukSL._SX396_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Software Developer Life Manual by John Sonmez&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/center&gt;
+Again listening to episode &lt;a href=&#34;https://twitter.com/jsonmez&#34;&gt;John Sonmez&lt;/a&gt; on the &lt;a href=&#34;https://twitter.com/TalkPython&#34;&gt;@TalkPython&lt;/a&gt; &lt;a href=&#34;https://talkpython.fm/episodes/show/71/soft-skills-the-software-developer-s-life-manual&#34;&gt;Podcast episode #71&lt;/a&gt; I was curious about his book. I have read most of the book so far and the take out points for me were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;create a Blog&lt;/li&gt;
+&lt;li&gt;give value back to the community (contribute to OS, interesting blog posts)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/41Xz4UVM-0L._SX331_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;The Effective Engineer by Edmond Lau&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/center&gt;
+This is a book we gave away as a prize at the &lt;a href=&#34;http://lauzhack.com&#34;&gt;LauzHack Hackathon&lt;/a&gt; in Switzerland which I &lt;a href=&#34;https://esaezgil.github.io/events/&#34;&gt;attended&lt;/a&gt; as a Skyscanner representative. I was curious about it and I am reading it now.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Next books</title>
+      <link>https://esaezgil.github.io/page/next_books/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esaezgil.github.io/page/next_books/</guid>
+      <description>&lt;p&gt;This is a list of books I want to read next, &lt;strong&gt;feel free to recommend me some other books in the comments below&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/51cRqX8DTgL._SX379_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Fluent Python&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/center&gt;&lt;/p&gt;
 </description>
     </item>
     
