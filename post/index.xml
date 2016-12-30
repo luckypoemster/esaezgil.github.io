@@ -6,13 +6,13 @@
     <description>Recent content in Post-rsses on Hej, I&#39;m Enrique</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Dec 2016 10:54:24 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 30 Dec 2016 11:54:24 +0200</lastBuildDate>
     <atom:link href="https://esaezgil.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Scheduling logrotate in CentOS</title>
       <link>https://esaezgil.github.io/post/logrotate_scheduling_centos/</link>
-      <pubDate>Thu, 29 Dec 2016 10:54:24 +0200</pubDate>
+      <pubDate>Fri, 30 Dec 2016 11:54:24 +0200</pubDate>
       
       <guid>https://esaezgil.github.io/post/logrotate_scheduling_centos/</guid>
       <description>&lt;p&gt;Logs are a fundamental piece of the web server architecture for debugging, monitoring
