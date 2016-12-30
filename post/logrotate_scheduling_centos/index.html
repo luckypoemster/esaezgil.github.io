@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Reasons for a blog</title>
+  <title>Scheduling logrotate in CentOS</title>
 
   <meta name="author" content="Enrique Saez" />
   
@@ -24,9 +24,9 @@
   <link rel="stylesheet" href="https://esaezgil.github.io/css/pygment_highlights.css" />
   
   
-  <meta property="og:title" content="Reasons for a blog" />
+  <meta property="og:title" content="Scheduling logrotate in CentOS" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/post/reasons_for_a_blog//" />
+  <meta property="og:url" content="/post/logrotate_scheduling_centos//" />
   <meta property="og:image" content="img/icon.jpg" />
   
 </head>
@@ -112,7 +112,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="post-heading">
-          <h1>Reasons for a blog</h1>
+          <h1>Scheduling logrotate in CentOS</h1>
       
       
       
@@ -132,46 +132,88 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-          <p>I have been enjoying the <a href="https://talkpython.fm/episodes/all">Talk Python Podcast</a> for a while and at least two episodes revolve around the importance of having a blog as a software developer.
+          <p>Logs are a fundamental piece of the web server architecture for debugging, monitoring
+and alerting purposes.
 </p>
 
-<p>In episode #69 <a href="https://talkpython.fm/episodes/show/69/write-an-excellent-programming-blog">Write an Excellent Programming Blog</a> guest <a href="https://twitter.com/jessejiryudavis">A. Jesse Davis</a> dissects the advice he gives in his own post <a href="https://emptysqua.re/blog/write-an-excellent-programming-blog/">Write an Excellent Programming Blog</a> with tips for blog content and argues that blogging does not need to be regular but of high quality and lasting value, which I absolutely agree with.</p>
+<p>Some of the infrastructure at <a href="https://www.skyscanner.net/hotels">Skyscanner Hotels</a>&rsquo; Backend makes use of <a href="https://github.com/etsy/logster">logster</a> to send logs to <a href="https://graphiteapp.org/">Graphite</a> and generate alerts through <a href="https://github.com/scobal/seyren">Seyren</a> enabling ChatOps through <a href="https://slack.com/">Slack</a>. Although we usually check the different dashboards in <a href="https://www.elastic.co/products/kibana">Kibana</a>, having a well-maintained set of logs is important for quickly looking up and investigating an event.</p>
 
-<blockquote class="twitter-tweet tw-align-center"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Announcing <a href="https://twitter.com/TalkPython">@TalkPython</a> #69: Write an Excellent Programming Blog with <a href="https://twitter.com/jessejiryudavis">@jessejiryudavis</a> <a href="https://t.co/2gk8Euv91E">https://t.co/2gk8Euv91E</a> <a href="https://t.co/CmqosyEdGV">pic.twitter.com/CmqosyEdGV</a></p>&mdash; Talk Python Podcast (@TalkPython) <a href="https://twitter.com/TalkPython/status/758040353396187137">July 26, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></blockquote>
+<p><center>
+<figure >
+    
+        <img src="https://esaezgil.github.io/img/alerting_monitoring_infrastructure_subset.png" width="720" />
+    
+    
+    <figcaption>
+        <h4>Subset of the monitoring and alerting architecture</h4>
+        
+    </figcaption>
+    
+</figure>
+</center></p>
 
-<p>In episode #71 <a href="https://talkpython.fm/episodes/show/71/soft-skills-the-software-developer-s-life-manual">Soft Skills: The software developer&rsquo;s life manual</a> guest <a href="http://twitter.com/jsonmez">John Sonmez</a> emphasizes the importance that the blog had for his own career and encourages others to do so. He also talks about his <a href="https://esaezgil.github.io/page/books_finished/">book that I read</a> recently.</p>
+<p><a href="http://www.linuxcommand.org/man_pages/logrotate8.html">Logrotate</a> is a small utility that allows to <em>rotate</em> the logs: archiving the current log, start a fresh one and delete old logs.</p>
 
-<blockquote class="twitter-tweet tw-align-center"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">My new sounds: #71: Soft Skills: The software developer&#39;s life manual <a href="https://t.co/MrvePrpuCE">https://t.co/MrvePrpuCE</a> on <a href="https://twitter.com/hashtag/SoundCloud?src=hash">#SoundCloud</a></p>&mdash; Talk Python Podcast (@TalkPython) <a href="https://twitter.com/TalkPython/status/763888586752135168">August 12, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></blockquote>
+<p>Due to different reasons we were having problems with some of our logs and the fix turned out to be to schedule the log rotation at a specific time.</p>
 
-<p>Both episodes were quite influential on my decision to create my blog.</p>
+<h4 id="in-order-to-schedule-the-log-rotate-in-our-centos-systems-we-followed-these-steps">In order to schedule the log rotate in our CentOS systems we followed these steps:</h4>
 
-<p>The main reason that I distilled from both episodes, quoting A. Jesse Davis, is: <strong>&lsquo;your goal is to attract specialists in your field so you can share ideas with them&rsquo;</strong>. John Sonmez puts it in another way as finding your niche or specialization and becoming a reference for it.</p>
-
-<p>Furthermore, A. Jesse Davis provides an interesting generic list of topics to write about:</p>
+<ol>
+<li><p>Understand that logrotate is executed once a day. If we check the logrotate RPM
+<code>rpm -ql logrotate</code> we see something like the following:</p>
+<div class="highlight" style="background: #f0f3f3"><pre style="line-height: 125%">/etc/cron.daily/logrotate
+/etc/logrotate.conf
+/etc/logrotate.d
+/usr/sbin/logrotate
+/usr/share/doc/logrotate-3.8.6
+/usr/share/doc/logrotate-3.8.6/CHANGES
+/usr/share/doc/logrotate-3.8.6/COPYING
+/usr/share/man/man5/logrotate.conf.5.gz
+/usr/share/man/man8/logrotate.8.gz
+/var/lib/logrotate.status
+</pre></div>
 
 <ul>
-<li>Story</li>
-<li>Opinion</li>
-<li>How-To</li>
-<li>How Something Works</li>
-<li>Reviews</li>
-</ul>
+<li><p>The reason for <code>logrotate</code> being executed once a day can be seen in the previous list. The RPM creates a configuration entry in the <code>/cron.daily/</code> directory. Consequently, logrotate will be executed daily.</p></li>
 
-<p>Reflecting back on my own blog I have covered so far either stories or reviews (Meetups, Hackathons, contributing to Open Source, books page). Topics I want to write about in the future are <em>How-tos</em> and <em>How Something Works</em>. I believe these two last topics are certainly the most valuable for others.</p>
+<li><p>We would expect <strong>cron</strong> to be in charge of the scheduling of this task. However, for CentOS systems, <strong>anacron</strong> is the one in charge of the scheduling for daily events (among others). Furthermore, anacron introduces by default a random delay and it only starts running the scheduled tasks during the <code>START_HOURS_RANGE</code> as configured in <code>/etc/anacrontab</code>.</p></li>
+</ul></li>
+
+<li><p>Set the logrotate at a specific time: moving the logrotate configuration out of the <code>/logrotate.daily/</code> directory and scheduling its execution through cron.</p></li>
+</ol>
+
+<p>An example of the aforementioned solution can be achieved through <a href="https://www.ansible.com/">Ansible</a> as follows (<em>we make use of Ansible through <a href="https://www.jetbrains.com/teamcity/">TeamCity</a> for our automated deployment pipeline</em>):</p>
+<div class="highlight" style="background: #f0f3f3"><pre style="line-height: 125%">- name: check logrotate config exists in cron.daily
+  stat: path=/etc/cron.daily/logrotate
+  register: logrotate_config
+
+- name: move logrotate config if existing
+  command: mv /etc/cron.daily/logrotate /opt/home/logrotate.cronjob
+  when: logrotate_config.stat.exists
+
+- name: configure daily logrotate cron
+  cron: name=&quot;schedule logrotate&quot; minute=&quot;0&quot; hour=&quot;3&quot; job=&quot;/opt/home/logrotate.cronjob&quot;
+</pre></div>
+
+<p>This way, logrotate will be executed every day at 3 am.</p>
+
+<p>Credits:</p>
+
+<p>I shall thank my colleague Kampde for his detailed walkthrough about the intricacies of cron, anacron and RPMs among others.</p>
+
+<p>References:</p>
+
+<p><a href="https://support.rackspace.com/how-to/understanding-logrotate-utility/">Logrotate</a></p>
+
+<p><a href="http://serverfault.com/questions/454118/why-does-my-centos-logrotate-run-at-random-times">CentOS and logrotate at serverfault</a></p>
       </article>
 
       <ul class="pager blog-pager">
         
         <li class="previous">
-          <a href="https://esaezgil.github.io/post/enrique_2016_review/" data-toggle="tooltip" data-placement="top" title="2016 review">&larr; Previous Post</a>
+          <a href="https://esaezgil.github.io/post/reasons_for_a_blog/" data-toggle="tooltip" data-placement="top" title="Reasons for a blog">&larr; Previous Post</a>
         </li>
         
-        
-        <li class="next">
-          <a href="https://esaezgil.github.io/post/logrotate_scheduling_centos/" data-toggle="tooltip" data-placement="top" title="Scheduling logrotate in CentOS">Next Post &rarr;</a>
-        </li>
         
       </ul>
 
@@ -180,9 +222,9 @@
         <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'esaezgil';
-    var disqus_identifier = 'https:\/\/esaezgil.github.io\/post\/reasons_for_a_blog\/';
-    var disqus_title = 'Reasons for a blog';
-    var disqus_url = 'https:\/\/esaezgil.github.io\/post\/reasons_for_a_blog\/';
+    var disqus_identifier = 'https:\/\/esaezgil.github.io\/post\/logrotate_scheduling_centos\/';
+    var disqus_title = 'Scheduling logrotate in CentOS';
+    var disqus_url = 'https:\/\/esaezgil.github.io\/post\/logrotate_scheduling_centos\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
