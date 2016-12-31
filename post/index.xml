@@ -124,7 +124,9 @@ and alerting purposes.
 &lt;li&gt;Reviews&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Reflecting back on my own blog I have covered so far either stories or reviews (Meetups, Hackathons, contributing to Open Source, books page). Topics I want to write about in the future are &lt;em&gt;How-tos&lt;/em&gt; and &lt;em&gt;How Something Works&lt;/em&gt;. I believe these two last topics are certainly the most valuable for others.&lt;/p&gt;</description>
+&lt;p&gt;Reflecting back on my own blog I have covered so far either stories or reviews (Meetups, Hackathons, contributing to Open Source, books page). Topics I want to write about in the future are &lt;em&gt;How-tos&lt;/em&gt; and &lt;em&gt;How Something Works&lt;/em&gt;. I believe these two last topics are certainly the most valuable for others.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;[Update]&lt;/strong&gt; Back in the day I also checked &lt;a href=&#34;https://www.troyhunt.com/the-ghost-who-codes-how-anonymity-is/&#34;&gt;this post&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/troyhunt&#34;&gt;Troy Hunt&lt;/a&gt;. Although there&amp;rsquo;s some controversy around the topic, I believe that maintaining for a while a technical blog can help me improve my skills. An example for it that I look up to is &lt;a href=&#34;https://jeffknupp.com/&#34;&gt;Jeff Knupp&amp;rsquo;s blog&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -195,7 +197,7 @@ and alerting purposes.
 
 &lt;h1 id=&#34;talks&#34;&gt;Talks&lt;/h1&gt;
 
-&lt;p&gt;As I mentioned previously, I delivered a talk in the  &lt;a href=&#34;https://www.meetup.com/python-185/&#34;&gt;Barcelona Python Meetup&lt;/a&gt;. It was a good experience since I learnt a lot while preparing for the talk and I look forward to deliver another one in the future. Take a look at the &lt;a href=&#34;https://speakerdeck.com/esaezgil/python-projects-best-practices-1&#34;&gt;slides&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As I mentioned previously, I &lt;a href=&#34;https://esaezgil.github.io/post/python_best_practices/&#34;&gt;delivered a talk&lt;/a&gt; in the  &lt;a href=&#34;https://www.meetup.com/python-185/&#34;&gt;Barcelona Python Meetup&lt;/a&gt;. It was a good experience since I learnt a lot while preparing for the talk and I look forward to deliver another one in the future. Take a look at the &lt;a href=&#34;https://speakerdeck.com/esaezgil/python-projects-best-practices-1&#34;&gt;slides&lt;/a&gt; and the &lt;a href=&#34;https://github.com/esaezgil/pythonBestPractices&#34;&gt;GitHub repo&lt;/a&gt; I created for it.&lt;/p&gt;
 
 &lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;&amp;quot;Best practices for a Python project&amp;quot; by Enrique Sáez &lt;a href=&#34;https://twitter.com/hashtag/pybcn?src=hash&#34;&gt;#pybcn&lt;/a&gt; &lt;a href=&#34;https://t.co/pkw3ulxPgE&#34;&gt;pic.twitter.com/pkw3ulxPgE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Python Barcelona (@pybcn) &lt;a href=&#34;https://twitter.com/pybcn/status/789159836730679296&#34;&gt;October 20, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
