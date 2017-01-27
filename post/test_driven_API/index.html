@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>LauzHack - Nov&#39;16</title>
+  <title>Test-driven information system services</title>
 
   <meta name="author" content="Enrique Saez" />
   
@@ -24,9 +24,9 @@
   <link rel="stylesheet" href="https://esaezgil.github.io/css/pygment_highlights.css" />
   
   
-  <meta property="og:title" content="LauzHack - Nov&#39;16" />
+  <meta property="og:title" content="Test-driven information system services" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/events//" />
+  <meta property="og:url" content="/post/test_driven_API//" />
   <meta property="og:image" content="img/icon.jpg" />
   
 </head>
@@ -111,10 +111,12 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="events-heading">
-          <h1>LauzHack - Nov&#39;16</h1>
+        <div class="post-heading">
+          <h1>Test-driven information system services</h1>
       
       
+      
+      <span class="post-meta">Posted on January 27, 2017</span>
       
         </div>
       </div>
@@ -130,70 +132,88 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-          <p>This past weekend 18th - 20th November I attended <a href="http://lauzhack.com">Lauzhack</a>, a student-organized and student-oriented Hackathon in Lausanne, Switzerland, as a <a href="http://skyscanner.net">Skyscanner</a> representative.</p>
+          
 
-<blockquote class="twitter-tweet tw-align-center"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Such lovely weather! Hackers at <a href="https://twitter.com/LauzHack">@LauzHack</a>, check out the view! The Alps are are visible in all their glory! <a href="https://twitter.com/hashtag/HackTheAlps?src=hash">#HackTheAlps</a> <a href="https://t.co/32quDX60eW">pic.twitter.com/32quDX60eW</a></p>&mdash; LauzHack (@LauzHack) <a href="https://twitter.com/LauzHack/status/799973200994140160">November 19, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></blockquote>
+<p>Working for the backend service at <a href="https://www.skyscanner.net/hotels">Skyscanner Hotels</a> I take part in the development of new services and its associated APIs quite regularly.<br>
+When it comes to API design and development, breaking API changes might void the work of other teams&rsquo; work, haphazard the timely product delivery, negatively impact several KPIs and be responsible for not delivering any user value and of course break the service for existing users.</p>
 
-<p>The goal of the Hackathon was to encourage students from all over the world to work in a project over the weekend with the aim of networking, learning as much as possible and having fun in the mean time.</p>
+<p>Therefore, a flexible yet strong API contract from the beginning allows for the parallelization of the work, a much faster iteration and an incremental release of functionality.</p>
 
-<blockquote class="twitter-tweet tw-align-center"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">HackerSpace :D<a href="https://twitter.com/hashtag/JustBuildIt?src=hash">#JustBuildIt</a> <a href="https://t.co/jSildNCCBE">pic.twitter.com/jSildNCCBE</a></p>&mdash; LauzHack (@LauzHack) <a href="https://twitter.com/LauzHack/status/799984109414191104">November 19, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></blockquote>
+<p>This post aims to describe a strategy for validating and enforcing an API contract during its iterative development.</p>
 
-<p>I attended with my colleague <a href="https://twitter.com/blckdt">Manuel Miranda</a> in order to help hackers make use of the Skyscanner API in their projects. We also looked forward to spread the word about <a href="(http://skyscanner.net/jobs/graduates/)">Skyscanner graduate program</a>, <a href="http://skyscanner.net/jobs/graduates/">Skyscanner internships</a> and company culture.</p>
+<h1 id="test-driven-apis">Test-driven APIs</h1>
 
-<p>During the weekend we had the chance to address students in both the initial talk and in a tech talk. I delivered a tech talk in order to get hackers up and running in about 20 minutes with the Skyscanner API and its different endpoints.</p>
-
-<p>These are the slides for the presentation:</p>
-
-<script async class='speakerdeck-embed' data-id='6ebaec24d33a4a1f91b41a683d26f6f1' data-ratio='1.33333333333333' src='//speakerdeck.com/assets/embed.js'></script>
-
-<p>During the rest of the weekend we tended to questions that hackers came up with during the development of their projects. It is a truly enriching experience when people find new usages for the provided data and it is specially valuable when some of them even find bugs that we can report back to our colleagues!</p>
-
-<p>The event itself was really well organized and the premises of <a href="http://www.epfl.ch/index.en.html">EPFL</a> are top notch.</p>
-
-<blockquote class="twitter-tweet tw-align-center"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Come have a chat with our sponsors at their booths about the cool tech they brought! <a href="https://t.co/ZBamhr0Jom">pic.twitter.com/ZBamhr0Jom</a></p>&mdash; LauzHack (@LauzHack) <a href="https://twitter.com/LauzHack/status/799917130468556800">November 19, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></blockquote>
-
-<p>The projects I liked the most using <a href="http://business.skyscanner.net/">Skyscanner API</a> were:</p>
+<p>During the development of an information system service, a solid development pipeline requires:</p>
 
 <ul>
-<li><p><a href="https://devpost.com/software/travcal-boxpea">TravCal</a>: after setting the departure airport, Travcal queries for cached ticket prices and Hotel prices in different destinations and suggests tentative trips along its fares in your calendar. It was quite clever of them to make use of the calendar as it is instantly multi-device compliant from the very beginning. They won our Skyscanner challenge prize.</p></li>
-
-<li><p><a href="https://devpost.com/software/buddyflights">BuddyFlights</a>: the project suggests based on your Facebook friends&rsquo; location intermediate stops for your journey along the price of the tickets. I love the idea and I hope that these guys keep working on it or even helps inspire our internal team in charge of the inspiration map in the website.</p></li>
-
-<li><p><a href="https://devpost.com/software/citymatch">CityMatch</a>: this project included gamification in order to suggest travel destinations making use of Microsoft Cognitive services. I was instantly sold into the idea and hope that they keep working on it in the future.</p></li>
+<li>a strong test suite</li>
+<li>an automated test infrastructure</li>
+<li>a zero-click deployment process</li>
 </ul>
 
-<blockquote class="twitter-tweet tw-align-center"><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Buddyflights <a href="https://twitter.com/LauzHack">@LauzHack</a> using <a href="https://twitter.com/hashtag/skyscanner?src=hash">#skyscanner</a> API for travel <a href="https://t.co/tJLUxx1CeY">https://t.co/tJLUxx1CeY</a> it!@dtaschik <a href="https://twitter.com/dubsmash">@dubsmash</a> <a href="https://twitter.com/CodeVoyagers">@CodeVoyagers</a> <a href="https://t.co/1HNCM22c1G">pic.twitter.com/1HNCM22c1G</a></p>&mdash; Enrique (@eqirn) <a href="https://twitter.com/eqirn/status/800355990608691204">November 20, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></blockquote>
+<p>Such a solid pipeline along a well-defined vision for the product that translates into an incremental functionality plays a central role to the overall success of the project and the ever-increasing value delivery to the user.</p>
 
-<p>The projects I liked the most using other sponsor&rsquo;s APIs were:</p>
+<p>Furthermore, a strong test suite implies covering all layers of the service:</p>
 
 <ul>
-<li><p><a href="https://devpost.com/software/will-i-be-late">WillIbeLate</a>: making use of SBB data to predict train delays based on the day, the route and the weather.</p></li>
-
-<li><p><a href="https://devpost.com/software/openallergies">OpenAllergies</a>: making use of the recently launched <a href="https://www.openfood.ch/">OpenFood</a> API they warn the user about possible allergies by scanning a product&rsquo;s barcode.</p></li>
+<li>the most basic behavior through Unit Tests</li>
+<li>the integration with third-party services through Integration Tests</li>
+<li>the overall user-facing functionality through Acceptance Tests</li>
 </ul>
 
-<p>My take out points:</p>
+<p><center>
+<figure>
+<img src="https://esaezgil.github.io/img/testing_pyramid.png" width="360" height="305"/>
+<figcaption>
+<b>Figure 1: </b>Testing pyramid showing the decremental amount of tests a system should have for higher abstractions<br>
+(original source: <a href="https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html">google testing blog</a>)
+</figcaption>
+</figure>
+</center></p>
+
+<p>As shown in Figure 1, a decremental test suite is based on the fact that the width and depth of tests covering the most basic behavior, though Unit Tests, will allow for a less exhaustive coverage of the subsequent testing stages.</p>
+
+<p>Every higher logical abstraction implies a longer testing time:</p>
 
 <ul>
-<li><p>As a sponsor I really enjoyed the event. I had the chance to learn about challenges other sponsors face on a daily basis and found out about new cool technologies and products they are developing.</p></li>
-
-<li><p>This is my 5th Hackathon over the last year (2nd as sponsor) and I keep enjoying the thrill and out of the box thinking fostered by this kind of events.</p></li>
-
-<li><p>Hackathons set the perfect ambiance for innovation. Working within a strict timeframe helps effectively deliver the basics of an impactful product.</p></li>
+<li>Integration tests: require interaction with third-party services</li>
+<li>Acceptance tests: require setting up blank production-like environments on the fly and interact with third-party services.</li>
 </ul>
 
-<p>Looking forward to LauzHack&rsquo;17</p>
+<p>Moreover, when it comes to acceptance tests for complex yet flexible APIs, the myriad of possible scenarios might quickly lead to a large set of acceptance tests yielding the previously detailed undesired scenario.</p>
+
+<p>If not born in mind, a time-consuming testing pipeline will drag down the team&rsquo;s iteration speed.</p>
+
+<h1 id="enforcing-the-api-contract">Enforcing the API contract</h1>
+
+<p>In order to enforce the API contract, schemas for the APIs endpoints&rsquo; responses are defined and all releases must be validated against them. There are several tools available to automate the validation of the defined schemas for example <a href="https://pypi.python.org/pypi/jsonschema"><em>jsonschema</em></a> in Python.</p>
+
+<p>In order to overcome the aforementioned hurdle in the service we are creating at the moment, we implemented the following strategy:</p>
+
+<ul>
+<li><p>Development of a new set of Unit Tests for our main endpoint (offering lots of flexibility on its usage), covering the different scenarios by:</p>
+
+<ul>
+<li><p>Mocking the response of third-party services.</p></li>
+
+<li><p>Creating a set of schemas whose properties are not set to <em>required</em>.</p></li>
+
+<li><p>Validating the returned response from the endpoint against the defined schemas by dynamically setting the required properties for each test according to the scenario.</p></li>
+</ul></li>
+
+<li><p>Development of a new set of Integration Tests with the tightly coupled third-party services that would alert us of any breaking change on the 3rd party&rsquo;s side by validating that their response abides to the service&rsquo;s contract.</p></li>
+
+<li><p>Development of a set of Acceptance Tests that check the different clients&rsquo; use-cases and validates the endpoint&rsquo;s responses against strict schemas (schemas in which all required properties are compulsory).</p></li>
+</ul>
+
+<p>Finally, the acceptance tests&rsquo;s schemas can be used as the service&rsquo;s documentation.</p>
 
       </article>
 
       <ul class="pager blog-pager">
         
         <li class="previous">
-          <a href="https://esaezgil.github.io/events/hackupc16/" data-toggle="tooltip" data-placement="top" title="HackUPC&#39;16">&larr; Previous Post</a>
+          <a href="https://esaezgil.github.io/post/logrotate_scheduling_centos/" data-toggle="tooltip" data-placement="top" title="Scheduling logrotate in CentOS">&larr; Previous Post</a>
         </li>
         
         
@@ -204,9 +224,9 @@
         <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'esaezgil';
-    var disqus_identifier = 'https:\/\/esaezgil.github.io\/events\/';
-    var disqus_title = 'LauzHack - Nov\x2716';
-    var disqus_url = 'https:\/\/esaezgil.github.io\/events\/';
+    var disqus_identifier = 'https:\/\/esaezgil.github.io\/post\/test_driven_API\/';
+    var disqus_title = 'Test-driven information system services';
+    var disqus_url = 'https:\/\/esaezgil.github.io\/post\/test_driven_API\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

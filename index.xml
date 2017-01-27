@@ -6,8 +6,92 @@
     <description>Recent content on Hej, I&#39;m Enrique</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Dec 2016 11:54:24 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 27 Jan 2017 13:27:21 +0100</lastBuildDate>
     <atom:link href="https://esaezgil.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Test-driven information system services</title>
+      <link>https://esaezgil.github.io/post/test_driven_API/</link>
+      <pubDate>Fri, 27 Jan 2017 13:27:21 +0100</pubDate>
+      
+      <guid>https://esaezgil.github.io/post/test_driven_API/</guid>
+      <description>
+
+&lt;p&gt;Working for the backend service at &lt;a href=&#34;https://www.skyscanner.net/hotels&#34;&gt;Skyscanner Hotels&lt;/a&gt; I take part in the development of new services and its associated APIs quite regularly.&lt;br&gt;
+When it comes to API design and development, breaking API changes might void the work of other teams&amp;rsquo; work, haphazard the timely product delivery, negatively impact several KPIs and be responsible for not delivering any user value and of course break the service for existing users.&lt;/p&gt;
+
+&lt;p&gt;Therefore, a flexible yet strong API contract from the beginning allows for the parallelization of the work, a much faster iteration and an incremental release of functionality.&lt;/p&gt;
+
+&lt;p&gt;This post aims to describe a strategy for validating and enforcing an API contract during its iterative development.&lt;/p&gt;
+
+&lt;h1 id=&#34;test-driven-apis&#34;&gt;Test-driven APIs&lt;/h1&gt;
+
+&lt;p&gt;During the development of an information system service, a solid development pipeline requires:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a strong test suite&lt;/li&gt;
+&lt;li&gt;an automated test infrastructure&lt;/li&gt;
+&lt;li&gt;a zero-click deployment process&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Such a solid pipeline along a well-defined vision for the product that translates into an incremental functionality plays a central role to the overall success of the project and the ever-increasing value delivery to the user.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, a strong test suite implies covering all layers of the service:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the most basic behavior through Unit Tests&lt;/li&gt;
+&lt;li&gt;the integration with third-party services through Integration Tests&lt;/li&gt;
+&lt;li&gt;the overall user-facing functionality through Acceptance Tests&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;figure&gt;
+&lt;img src=&#34;https://esaezgil.github.io/img/testing_pyramid.png&#34; width=&#34;360&#34; height=&#34;305&#34;/&gt;
+&lt;figcaption&gt;
+&lt;b&gt;Figure 1: &lt;/b&gt;Testing pyramid showing the decremental amount of tests a system should have for higher abstractions&lt;br&gt;
+(original source: &lt;a href=&#34;https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html&#34;&gt;google testing blog&lt;/a&gt;)
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;As shown in Figure 1, a decremental test suite is based on the fact that the width and depth of tests covering the most basic behavior, though Unit Tests, will allow for a less exhaustive coverage of the subsequent testing stages.&lt;/p&gt;
+
+&lt;p&gt;Every higher logical abstraction implies a longer testing time:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Integration tests: require interaction with third-party services&lt;/li&gt;
+&lt;li&gt;Acceptance tests: require setting up blank production-like environments on the fly and interact with third-party services.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Moreover, when it comes to acceptance tests for complex yet flexible APIs, the myriad of possible scenarios might quickly lead to a large set of acceptance tests yielding the previously detailed undesired scenario.&lt;/p&gt;
+
+&lt;p&gt;If not born in mind, a time-consuming testing pipeline will drag down the team&amp;rsquo;s iteration speed.&lt;/p&gt;
+
+&lt;h1 id=&#34;enforcing-the-api-contract&#34;&gt;Enforcing the API contract&lt;/h1&gt;
+
+&lt;p&gt;In order to enforce the API contract, schemas for the APIs endpoints&amp;rsquo; responses are defined and all releases must be validated against them. There are several tools available to automate the validation of the defined schemas for example &lt;a href=&#34;https://pypi.python.org/pypi/jsonschema&#34;&gt;&lt;em&gt;jsonschema&lt;/em&gt;&lt;/a&gt; in Python.&lt;/p&gt;
+
+&lt;p&gt;In order to overcome the aforementioned hurdle in the service we are creating at the moment, we implemented the following strategy:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Development of a new set of Unit Tests for our main endpoint (offering lots of flexibility on its usage), covering the different scenarios by:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Mocking the response of third-party services.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Creating a set of schemas whose properties are not set to &lt;em&gt;required&lt;/em&gt;.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Validating the returned response from the endpoint against the defined schemas by dynamically setting the required properties for each test according to the scenario.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Development of a new set of Integration Tests with the tightly coupled third-party services that would alert us of any breaking change on the 3rd party&amp;rsquo;s side by validating that their response abides to the service&amp;rsquo;s contract.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Development of a set of Acceptance Tests that check the different clients&amp;rsquo; use-cases and validates the endpoint&amp;rsquo;s responses against strict schemas (schemas in which all required properties are compulsory).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Finally, the acceptance tests&amp;rsquo;s schemas can be used as the service&amp;rsquo;s documentation.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Scheduling logrotate in CentOS</title>
@@ -746,43 +830,6 @@ Again listening to episode &lt;a href=&#34;https://twitter.com/jsonmez&#34;&gt;J
 &lt;/figure&gt;
 &lt;/center&gt;
 This is a book we gave away as a prize at the &lt;a href=&#34;http://lauzhack.com&#34;&gt;LauzHack Hackathon&lt;/a&gt; in Switzerland which I &lt;a href=&#34;https://esaezgil.github.io/events/&#34;&gt;attended&lt;/a&gt; as a Skyscanner representative. I was curious about it and I am reading it now.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Next books</title>
-      <link>https://esaezgil.github.io/page/next_books/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://esaezgil.github.io/page/next_books/</guid>
-      <description>&lt;p&gt;This is a list of books I want to read next, &lt;strong&gt;feel free to recommend me some other books in the comments below&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/51cRqX8DTgL._SX379_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;Fluent Python by Luciano Ramalho&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-&lt;/center&gt;
-&lt;center&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/61uUPXbhMxL._SX397_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;Grokking Algorithms by Aditya Bhargava&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-&lt;/center&gt;&lt;/p&gt;
 </description>
     </item>
     
