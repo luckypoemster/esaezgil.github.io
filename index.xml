@@ -15,10 +15,10 @@
       <pubDate>Fri, 27 Jan 2017 13:27:21 +0100</pubDate>
       
       <guid>https://esaezgil.github.io/post/test_driven_API/</guid>
-      <description>
+      <description>&lt;p&gt;Working for the backend service at &lt;a href=&#34;https://www.skyscanner.net/hotels&#34;&gt;Skyscanner Hotels&lt;/a&gt; I take part in the development of new services and its associated APIs quite regularly.
+&lt;/p&gt;
 
-&lt;p&gt;Working for the backend service at &lt;a href=&#34;https://www.skyscanner.net/hotels&#34;&gt;Skyscanner Hotels&lt;/a&gt; I take part in the development of new services and its associated APIs quite regularly.&lt;br&gt;
-When it comes to API design and development, breaking API changes might void the work of other teams&amp;rsquo; work, haphazard the timely product delivery, negatively impact several KPIs and be responsible for not delivering any user value and of course break the service for existing users.&lt;/p&gt;
+&lt;p&gt;When it comes to API design and development, breaking API changes might void the work of other teams&amp;rsquo; work, haphazard the timely product delivery, negatively impact several KPIs and be responsible for not delivering any user value and of course break the service for existing users.&lt;/p&gt;
 
 &lt;p&gt;Therefore, a flexible yet strong API contract from the beginning allows for the parallelization of the work, a much faster iteration and an incremental release of functionality.&lt;/p&gt;
 
@@ -89,8 +89,7 @@ When it comes to API design and development, breaking API changes might void the
 &lt;li&gt;&lt;p&gt;Development of a set of Acceptance Tests that check the different clients&amp;rsquo; use-cases and validates the endpoint&amp;rsquo;s responses against strict schemas (schemas in which all required properties are compulsory).&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Finally, the acceptance tests&amp;rsquo;s schemas can be used as the service&amp;rsquo;s documentation.&lt;/p&gt;
-</description>
+&lt;p&gt;Finally, the acceptance tests&amp;rsquo;s schemas can be used as the service&amp;rsquo;s documentation.&lt;/p&gt;</description>
     </item>
     
     <item>
