@@ -722,6 +722,22 @@ In this case I had written tests that checked the actual functionality on a high
 &lt;p&gt;&lt;center&gt;
 &lt;figure &gt;
     
+        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/41TINACY3hL._SX384_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Clean Code by Robert C. Martin&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;The Clean Code book has once again put for me the practice of writing software for other&amp;rsquo;s people to read and understand front and center.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;figure &gt;
+    
         &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/41brHoUIAiL._SX384_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
     
     
