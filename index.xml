@@ -6,8 +6,61 @@
     <description>Recent content on Hej, I&#39;m Enrique</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Jan 2017 13:27:21 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 11 Feb 2017 18:25:12 +0200</lastBuildDate>
     <atom:link href="https://esaezgil.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>LaTeX and moderncv in macOS</title>
+      <link>https://esaezgil.github.io/post/moderncv_latex_mac/</link>
+      <pubDate>Sat, 11 Feb 2017 18:25:12 +0200</pubDate>
+      
+      <guid>https://esaezgil.github.io/post/moderncv_latex_mac/</guid>
+      <description>&lt;p&gt;Confronted with the task of writing a CV for the first time many students resort to Microsoft Word and sloppy templates to be found on the Internet. &lt;/p&gt;
+
+&lt;p&gt;Recently, I was helping a family friend proofreading her CV and decided to also teach her about &lt;a href=&#34;http://www.latex-project.org/about/&#34;&gt;LaTeX&lt;/a&gt; and &lt;a href=&#34;https://github.com/xdanaux/moderncv&#34;&gt;moderncv&lt;/a&gt; in order to craft a high quality CV for her summer internship applications.&lt;/p&gt;
+
+&lt;p&gt;I used LaTeX extensively in the past to write my &lt;a href=&#34;http://projekter.aau.dk/projekter/en/studentthesis/enabling-the-spectral-efficient-coexistence-of-device-to-device-and-device-to-infrastructure-communications-through-opportunistic-interference-cancellation(6171379f-9d84-4eb0-a7fe-b14d830e4a6e).html&#34;&gt;Master Thesis&lt;/a&gt;, multiple essays and student projects during my Master studies. Since I had been using &lt;a href=&#34;https://miktex.org/&#34;&gt;MiKTeX&lt;/a&gt; in Windows, which takes quite a lot of space in the hard drive, I decided to check if I could make it through with a minimal LaTeX installation in my MacBook. Fortunately, this was the case:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;moderncv and LaTeX minimal requirements for macOS:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.tug.org/mactex/morepackages.html&#34;&gt;BasicTeX&lt;/a&gt;: BasicTeX is a subset of TeX Live of size 110 megabytes instead of 2 gigabytes. Perfect for our purposes!&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.xm1math.net/texmaker/download.html&#34;&gt;Texmaker&lt;/a&gt;: Texmaker is my favorite LaTeX editor, it is free and cross-platform.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://amaxwell.github.io/tlutility/&#34;&gt;TeX Live Utility&lt;/a&gt;: a graphical interface for &lt;a href=&#34;http://www.tug.org/texlive/tlmgr.html&#34;&gt;TeX Live Manager&lt;/a&gt;, which is a tool provided to update and maintain TeX Live. We will use &lt;em&gt;TeX Live Utility&lt;/em&gt; to install moderncv and some extra packages required.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After installing the previous, we need to install moderncv along some extra requirements through TeX Live Utility. As shown in the picture below, it can be done by simply searching for the packages and installing them.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://esaezgil.github.io/img/TeXLiveUtility.png&#34; width=&#34;720&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Installing packages with TeX Live Utility&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;The complete list of packages to be installed through TeX Live Utility are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;moderncv&lt;/li&gt;
+&lt;li&gt;xpatch&lt;/li&gt;
+&lt;li&gt;fontawesome&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After this relatively short process you should be ready to start writing your shiny new CV.&lt;/p&gt;
+
+&lt;p&gt;Check &lt;a href=&#34;https://github.com/xdanaux/moderncv&#34;&gt;Xavier Danaux&amp;rsquo;s GitHub&lt;/a&gt; for examples or &lt;a href=&#34;http://www.latextemplates.com/template/moderncv-cv-and-cover-letter&#34;&gt;LaTeX Templates&lt;/a&gt; to help you get started.&lt;/p&gt;
+
+&lt;p&gt;Finally, bear in mind that moderncv includes a fantastic template for cover letters as well.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Test-driven information system services</title>
@@ -708,143 +761,6 @@ In this case I had written tests that checked the actual functionality on a high
 &lt;/ul&gt;
 
 &lt;p&gt;Please suggest me some new readings in the comments :)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Current and past books</title>
-      <link>https://esaezgil.github.io/page/books_finished/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://esaezgil.github.io/page/books_finished/</guid>
-      <description>&lt;p&gt;This is a brief list of the books I have read recently or I am reading at the moment:&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/41TINACY3hL._SX384_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;Clean Code by Robert C. Martin&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;The Clean Code book has once again put for me the practice of writing software for other&amp;rsquo;s people to read and understand front and center.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/41brHoUIAiL._SX384_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;Writing Idiomatic Python by Jeff Knupp&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;I really enjoyed going through &lt;a href=&#34;https://jeffknupp.com/blog/archives/&#34;&gt;Jeff’s posts&lt;/a&gt;. His book although concise it is straight to the point, laying out important fundamentals in a clear way.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/51G2L3Ghp5L._SX322_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;Effective Python by Brett Slatkin&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-&lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;Listening to &lt;a href=&#34;https://twitter.com/haxor&#34;&gt;Brett&lt;/a&gt; on the &lt;a href=&#34;https://twitter.com/TalkPython&#34;&gt;@TalkPython&lt;/a&gt; &lt;a href=&#34;https://talkpython.fm/episodes/show/25/effective-python&#34;&gt;Podcast episode #25&lt;/a&gt; was pretty inspirational, starting from scratch with Python at his job at Google to leading teams and launching App Engine. I had to read his book and I am enjoying it and learning a lot.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/5182TyS6gJL._SX379_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;The Hitchhiker&amp;#39;s Guide to Python by Kenneth Reitz&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-&lt;/center&gt;
-In one of our projects at &lt;a href=&#34;https://www.skyscanner.net/hotels&#34;&gt;Skyscanner Hotels&lt;/a&gt; we make use of &lt;a href=&#34;https://twitter.com/kennethreitz&#34;&gt;Kenneth Reitz&amp;rsquo;s&lt;/a&gt; libraries: &lt;a href=&#34;https://github.com/kennethreitz/requests&#34;&gt;Requests&lt;/a&gt;. That is how I found out about his book &lt;a href=&#34;http://docs.python-guide.org/en/latest/&#34;&gt;The Hitchhiker’s Guide to Python&lt;/a&gt; that I made use extensively while preparing my &lt;a href=&#34;https://esaezgil.github.io/post/python_best_practices/&#34;&gt;Python Best Practices&lt;/a&gt; talk.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/51QNzJpNNvL._SX373_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;Python 101 by Michael Driscoll&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-&lt;/center&gt;
-Another book which I read through for my &lt;a href=&#34;https://esaezgil.github.io/post/python_best_practices/&#34;&gt;Python Best Practices&lt;/a&gt; talk.
-&lt;center&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://thehackerguidetopython.com/img/the-hacker-guide-to-python-darken-v2.png&#34; width=&#34;220&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;The hacker&amp;#39;s Guide to Python&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-&lt;/center&gt;
-I also made use of Julien Danjou&amp;rsquo;s &lt;a href=&#34;https://thehackerguidetopython.com/&#34;&gt;The hacker&amp;rsquo;s Guide to Python&lt;/a&gt; for preparing the &lt;a href=&#34;https://esaezgil.github.io/post/python_best_practices/&#34;&gt;Python Best Practices&lt;/a&gt; talk.&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/51WiLueukSL._SX396_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;Software Developer Life Manual by John Sonmez&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-&lt;/center&gt;
-Again listening to episode &lt;a href=&#34;https://twitter.com/jsonmez&#34;&gt;John Sonmez&lt;/a&gt; on the &lt;a href=&#34;https://twitter.com/TalkPython&#34;&gt;@TalkPython&lt;/a&gt; &lt;a href=&#34;https://talkpython.fm/episodes/show/71/soft-skills-the-software-developer-s-life-manual&#34;&gt;Podcast episode #71&lt;/a&gt; I was curious about his book. I have read most of the book so far and the take out points for me were:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;create a Blog&lt;/li&gt;
-&lt;li&gt;give value back to the community (contribute to OS, interesting blog posts)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;center&gt;
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://images-na.ssl-images-amazon.com/images/I/41Xz4UVM-0L._SX331_BO1,204,203,200_.jpg&#34; width=&#34;220&#34; /&gt;
-    
-    
-    &lt;figcaption&gt;
-        &lt;h4&gt;The Effective Engineer by Edmond Lau&lt;/h4&gt;
-        
-    &lt;/figcaption&gt;
-    
-&lt;/figure&gt;
-&lt;/center&gt;
-This is a book we gave away as a prize at the &lt;a href=&#34;http://lauzhack.com&#34;&gt;LauzHack Hackathon&lt;/a&gt; in Switzerland which I &lt;a href=&#34;https://esaezgil.github.io/events/&#34;&gt;attended&lt;/a&gt; as a Skyscanner representative. I was curious about it and I am reading it now.&lt;/p&gt;
 </description>
     </item>
     

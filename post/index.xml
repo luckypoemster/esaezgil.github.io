@@ -6,8 +6,61 @@
     <description>Recent content in Post-rsses on Hej, I&#39;m Enrique</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Jan 2017 13:27:21 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 11 Feb 2017 18:25:12 +0200</lastBuildDate>
     <atom:link href="https://esaezgil.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>LaTeX and moderncv in macOS</title>
+      <link>https://esaezgil.github.io/post/moderncv_latex_mac/</link>
+      <pubDate>Sat, 11 Feb 2017 18:25:12 +0200</pubDate>
+      
+      <guid>https://esaezgil.github.io/post/moderncv_latex_mac/</guid>
+      <description>&lt;p&gt;Confronted with the task of writing a CV for the first time many students resort to Microsoft Word and sloppy templates to be found on the Internet. &lt;/p&gt;
+
+&lt;p&gt;Recently, I was helping a family friend proofreading her CV and decided to also teach her about &lt;a href=&#34;http://www.latex-project.org/about/&#34;&gt;LaTeX&lt;/a&gt; and &lt;a href=&#34;https://github.com/xdanaux/moderncv&#34;&gt;moderncv&lt;/a&gt; in order to craft a high quality CV for her summer internship applications.&lt;/p&gt;
+
+&lt;p&gt;I used LaTeX extensively in the past to write my &lt;a href=&#34;http://projekter.aau.dk/projekter/en/studentthesis/enabling-the-spectral-efficient-coexistence-of-device-to-device-and-device-to-infrastructure-communications-through-opportunistic-interference-cancellation(6171379f-9d84-4eb0-a7fe-b14d830e4a6e).html&#34;&gt;Master Thesis&lt;/a&gt;, multiple essays and student projects during my Master studies. Since I had been using &lt;a href=&#34;https://miktex.org/&#34;&gt;MiKTeX&lt;/a&gt; in Windows, which takes quite a lot of space in the hard drive, I decided to check if I could make it through with a minimal LaTeX installation in my MacBook. Fortunately, this was the case:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;moderncv and LaTeX minimal requirements for macOS:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.tug.org/mactex/morepackages.html&#34;&gt;BasicTeX&lt;/a&gt;: BasicTeX is a subset of TeX Live of size 110 megabytes instead of 2 gigabytes. Perfect for our purposes!&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.xm1math.net/texmaker/download.html&#34;&gt;Texmaker&lt;/a&gt;: Texmaker is my favorite LaTeX editor, it is free and cross-platform.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://amaxwell.github.io/tlutility/&#34;&gt;TeX Live Utility&lt;/a&gt;: a graphical interface for &lt;a href=&#34;http://www.tug.org/texlive/tlmgr.html&#34;&gt;TeX Live Manager&lt;/a&gt;, which is a tool provided to update and maintain TeX Live. We will use &lt;em&gt;TeX Live Utility&lt;/em&gt; to install moderncv and some extra packages required.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After installing the previous, we need to install moderncv along some extra requirements through TeX Live Utility. As shown in the picture below, it can be done by simply searching for the packages and installing them.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://esaezgil.github.io/img/TeXLiveUtility.png&#34; width=&#34;720&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;h4&gt;Installing packages with TeX Live Utility&lt;/h4&gt;
+        
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;The complete list of packages to be installed through TeX Live Utility are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;moderncv&lt;/li&gt;
+&lt;li&gt;xpatch&lt;/li&gt;
+&lt;li&gt;fontawesome&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After this relatively short process you should be ready to start writing your shiny new CV.&lt;/p&gt;
+
+&lt;p&gt;Check &lt;a href=&#34;https://github.com/xdanaux/moderncv&#34;&gt;Xavier Danaux&amp;rsquo;s GitHub&lt;/a&gt; for examples or &lt;a href=&#34;http://www.latextemplates.com/template/moderncv-cv-and-cover-letter&#34;&gt;LaTeX Templates&lt;/a&gt; to help you get started.&lt;/p&gt;
+
+&lt;p&gt;Finally, bear in mind that moderncv includes a fantastic template for cover letters as well.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Test-driven information system services</title>
