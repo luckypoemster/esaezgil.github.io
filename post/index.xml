@@ -10,7 +10,7 @@
     <atom:link href="https://esaezgil.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Python lists: pop() or slice?</title>
+      <title>Python lists: pop vs slice performance</title>
       <link>https://esaezgil.github.io/post/python_list_pop_slice/</link>
       <pubDate>Wed, 22 Feb 2017 15:16:33 +0100</pubDate>
       
