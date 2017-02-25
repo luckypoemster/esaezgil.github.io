@@ -78,10 +78,13 @@
 &lt;/figure&gt;
 &lt;/center&gt;&lt;/p&gt;
 
-&lt;p&gt;The Clean Code book has once again put front and center for me that writing software is a practice in which its output should be centered around:
-  - the reproducibility of the results
-  - an incremental refinement of the work based on the tests written for reproducibility
-  - the easiness for other people to read, understand, maintain and extend the code&lt;/p&gt;
+&lt;p&gt;The Clean Code book has once again put front and center for me that writing software is a practice in which its output should be centered around:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the reproducibility of the results&lt;/li&gt;
+&lt;li&gt;an incremental refinement of the work based on the tests written for reproducibility&lt;/li&gt;
+&lt;li&gt;the easiness for other people to read, understand, maintain and extend the code&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;center&gt;
 &lt;figure &gt;
