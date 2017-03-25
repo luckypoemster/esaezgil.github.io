@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hej, I&#39;m Enrique</title>
-    <link>https://esaezgil.github.io/index.xml</link>
+    <link>http://esaezgil.com/index.xml</link>
     <description>Recent content on Hej, I&#39;m Enrique</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 22 Feb 2017 15:16:33 +0100</lastBuildDate>
-    <atom:link href="https://esaezgil.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://esaezgil.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Python lists: pop vs slice performance</title>
-      <link>https://esaezgil.github.io/post/python_list_pop_slice/</link>
+      <link>http://esaezgil.com/post/python_list_pop_slice/</link>
       <pubDate>Wed, 22 Feb 2017 15:16:33 +0100</pubDate>
       
-      <guid>https://esaezgil.github.io/post/python_list_pop_slice/</guid>
+      <guid>http://esaezgil.com/post/python_list_pop_slice/</guid>
       <description>&lt;p&gt;Recently I had a comment in a merge request in which I was suggested to copy the &lt;code&gt;Nth-1&lt;/code&gt; last elements of a list, &lt;code&gt;a[1:]&lt;/code&gt;, instead of popping its first element, &lt;code&gt;pop(0)&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;I was curious about its performance implications and decided to do some simple tests: &lt;/p&gt;
@@ -61,10 +61,10 @@ t2&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;timeit(&lt;span style
     
     <item>
       <title>LaTeX and moderncv in macOS</title>
-      <link>https://esaezgil.github.io/post/moderncv_latex_mac/</link>
+      <link>http://esaezgil.com/post/moderncv_latex_mac/</link>
       <pubDate>Sat, 11 Feb 2017 18:25:12 +0200</pubDate>
       
-      <guid>https://esaezgil.github.io/post/moderncv_latex_mac/</guid>
+      <guid>http://esaezgil.com/post/moderncv_latex_mac/</guid>
       <description>&lt;p&gt;Confronted with the task of writing a CV for the first time many students resort to Microsoft Word and sloppy templates to be found on the Internet. &lt;/p&gt;
 
 &lt;p&gt;Recently, I was helping a family friend proofreading her CV and decided to also teach her about &lt;a href=&#34;http://www.latex-project.org/about/&#34;&gt;LaTeX&lt;/a&gt; and &lt;a href=&#34;https://github.com/xdanaux/moderncv&#34;&gt;moderncv&lt;/a&gt; in order to craft a high quality CV for her summer internship applications.&lt;/p&gt;
@@ -86,7 +86,7 @@ t2&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;timeit(&lt;span style
 &lt;p&gt;&lt;center&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://esaezgil.github.io/img/TeXLiveUtility.png&#34; width=&#34;720&#34; /&gt;
+        &lt;img src=&#34;http://esaezgil.com/img/TeXLiveUtility.png&#34; width=&#34;720&#34; /&gt;
     
     
     &lt;figcaption&gt;
@@ -114,10 +114,10 @@ t2&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;timeit(&lt;span style
     
     <item>
       <title>Test-driven information system services</title>
-      <link>https://esaezgil.github.io/post/test_driven_API/</link>
+      <link>http://esaezgil.com/post/test_driven_API/</link>
       <pubDate>Fri, 27 Jan 2017 13:27:21 +0100</pubDate>
       
-      <guid>https://esaezgil.github.io/post/test_driven_API/</guid>
+      <guid>http://esaezgil.com/post/test_driven_API/</guid>
       <description>&lt;p&gt;Working for the backend service at &lt;a href=&#34;https://www.skyscanner.net/hotels&#34;&gt;Skyscanner Hotels&lt;/a&gt; I take part in the development of new services and its associated APIs quite regularly.
 &lt;/p&gt;
 
@@ -149,7 +149,7 @@ t2&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;timeit(&lt;span style
 
 &lt;p&gt;&lt;center&gt;
 &lt;figure&gt;
-&lt;img src=&#34;https://esaezgil.github.io/img/testing_pyramid.png&#34; width=&#34;360&#34; height=&#34;305&#34;/&gt;
+&lt;img src=&#34;http://esaezgil.com/img/testing_pyramid.png&#34; width=&#34;360&#34; height=&#34;305&#34;/&gt;
 &lt;figcaption&gt;
 &lt;b&gt;Figure 1: &lt;/b&gt;Testing pyramid showing the decremental amount of tests a system should have for higher abstractions&lt;br&gt;
 (original source: &lt;a href=&#34;https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html&#34;&gt;google testing blog&lt;/a&gt;)
@@ -197,10 +197,10 @@ t2&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;timeit(&lt;span style
     
     <item>
       <title>Scheduling logrotate in CentOS</title>
-      <link>https://esaezgil.github.io/post/logrotate_scheduling_centos/</link>
+      <link>http://esaezgil.com/post/logrotate_scheduling_centos/</link>
       <pubDate>Fri, 30 Dec 2016 11:54:24 +0200</pubDate>
       
-      <guid>https://esaezgil.github.io/post/logrotate_scheduling_centos/</guid>
+      <guid>http://esaezgil.com/post/logrotate_scheduling_centos/</guid>
       <description>&lt;p&gt;Logs are a fundamental piece of the web server architecture for debugging, monitoring
 and alerting purposes.
 &lt;/p&gt;
@@ -210,7 +210,7 @@ and alerting purposes.
 &lt;p&gt;&lt;center&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://esaezgil.github.io/img/alerting_monitoring_infrastructure_subset.png&#34; width=&#34;720&#34; /&gt;
+        &lt;img src=&#34;http://esaezgil.com/img/alerting_monitoring_infrastructure_subset.png&#34; width=&#34;720&#34; /&gt;
     
     
     &lt;figcaption&gt;
@@ -279,10 +279,10 @@ and alerting purposes.
     
     <item>
       <title>Reasons for a blog</title>
-      <link>https://esaezgil.github.io/post/reasons_for_a_blog/</link>
+      <link>http://esaezgil.com/post/reasons_for_a_blog/</link>
       <pubDate>Thu, 29 Dec 2016 01:37:32 +0200</pubDate>
       
-      <guid>https://esaezgil.github.io/post/reasons_for_a_blog/</guid>
+      <guid>http://esaezgil.com/post/reasons_for_a_blog/</guid>
       <description>&lt;p&gt;I have been enjoying the &lt;a href=&#34;https://talkpython.fm/episodes/all&#34;&gt;Talk Python Podcast&lt;/a&gt; for a while and at least two episodes revolve around the importance of having a blog as a software developer.
 &lt;/p&gt;
 
@@ -312,15 +312,17 @@ and alerting purposes.
 
 &lt;p&gt;Reflecting back on my own blog I have covered so far either stories or reviews (Meetups, Hackathons, contributing to Open Source, books page). Topics I want to write about in the future are &lt;em&gt;How-tos&lt;/em&gt; and &lt;em&gt;How Something Works&lt;/em&gt;. I believe these two last topics are certainly the most valuable for others.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;[Update]&lt;/strong&gt; Back in the day I also checked &lt;a href=&#34;https://www.troyhunt.com/the-ghost-who-codes-how-anonymity-is/&#34;&gt;this post&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/troyhunt&#34;&gt;Troy Hunt&lt;/a&gt;. Although there&amp;rsquo;s some controversy around the topic, I believe that maintaining for a while a technical blog can help me improve my skills. An example for it that I look up to is &lt;a href=&#34;https://jeffknupp.com/&#34;&gt;Jeff Knupp&amp;rsquo;s blog&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;[Update]&lt;/strong&gt; Back in the day I also checked &lt;a href=&#34;https://www.troyhunt.com/the-ghost-who-codes-how-anonymity-is/&#34;&gt;this post&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/troyhunt&#34;&gt;Troy Hunt&lt;/a&gt;. Although there&amp;rsquo;s some controversy around the topic, I believe that maintaining for a while a technical blog can help me improve my skills. An example for it that I look up to is &lt;a href=&#34;https://jeffknupp.com/&#34;&gt;Jeff Knupp&amp;rsquo;s blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Scott Hanselman also refers to the invisible developers as &lt;code&gt;Dark matter&lt;/code&gt; in his &lt;a href=&#34;http://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx&#34;&gt;post&lt;/a&gt; and states that there should be a balance between yelling online and getting actual stuff done, which I agree with and personally like to lean towards the actual getting stuff done.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>2016 review</title>
-      <link>https://esaezgil.github.io/post/enrique_2016_review/</link>
+      <link>http://esaezgil.com/post/enrique_2016_review/</link>
       <pubDate>Mon, 12 Dec 2016 19:37:32 +0200</pubDate>
       
-      <guid>https://esaezgil.github.io/post/enrique_2016_review/</guid>
+      <guid>http://esaezgil.com/post/enrique_2016_review/</guid>
       <description>&lt;p&gt;2016 is coming to an end and I would like to look back and review what I have been up to during the last year:
 &lt;/p&gt;
 
@@ -361,7 +363,7 @@ and alerting purposes.
 
 &lt;p&gt;I have attended and help organizing most of the monthly &lt;a href=&#34;https://www.meetup.com/python-185/&#34;&gt;Barcelona Python Meetup&lt;/a&gt; held at the office. From being a regular attendant I transitioned after my manager&amp;rsquo;s encouragement and the help of some of my team mates such as &lt;a href=&#34;https://twitter.com/pfreixes&#34;&gt;Pau Freixes&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/blckdt&#34;&gt;Manuel Miranda&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/jordixou&#34;&gt;Jordi Soucheiron&lt;/a&gt; to deliver a talk. I wrote about the experience &lt;a href=&#34;https://esaezgil.github.io/post/python_best_practices/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;About to start October&amp;#39;s meetup. Full house! &lt;a href=&#34;https://twitter.com/hashtag/pybcn?src=hash&#34;&gt;#pybcn&lt;/a&gt; &lt;a href=&#34;https://t.co/t3XUY3DGEB&#34;&gt;pic.twitter.com/t3XUY3DGEB&lt;/a&gt;&lt;/p&gt;&amp;mdash; Python Barcelona (@pybcn) &lt;a href=&#34;https://twitter.com/pybcn/status/789151624086298624&#34;&gt;October 20, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;About to start October&amp;#39;s meetup. Full house! &lt;a href=&#34;https://twitter.com/hashtag/pybcn?src=hash&#34;&gt;#pybcn&lt;/a&gt; &lt;a href=&#34;https://t.co/t3XUY3DGEB&#34;&gt;pic.twitter.com/t3XUY3DGEB&lt;/a&gt;&lt;/p&gt;&amp;mdash; PyDataBCN 2017 (@pybcn) &lt;a href=&#34;https://twitter.com/pybcn/status/789151624086298624&#34;&gt;October 20, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
 
 &lt;p&gt;I continue to enjoy this Meetup and keep meeting new interesting people. It&amp;rsquo;s an event I would like to keep going over the upcoming year as well.&lt;/p&gt;
@@ -385,7 +387,7 @@ and alerting purposes.
 
 &lt;p&gt;As I mentioned previously, I &lt;a href=&#34;https://esaezgil.github.io/post/python_best_practices/&#34;&gt;delivered a talk&lt;/a&gt; in the  &lt;a href=&#34;https://www.meetup.com/python-185/&#34;&gt;Barcelona Python Meetup&lt;/a&gt;. It was a good experience since I learnt a lot while preparing for the talk and I look forward to deliver another one in the future. Take a look at the &lt;a href=&#34;https://speakerdeck.com/esaezgil/python-projects-best-practices-1&#34;&gt;slides&lt;/a&gt; and the &lt;a href=&#34;https://github.com/esaezgil/pythonBestPractices&#34;&gt;GitHub repo&lt;/a&gt; I created for it.&lt;/p&gt;
 
-&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;&amp;quot;Best practices for a Python project&amp;quot; by Enrique Sáez &lt;a href=&#34;https://twitter.com/hashtag/pybcn?src=hash&#34;&gt;#pybcn&lt;/a&gt; &lt;a href=&#34;https://t.co/pkw3ulxPgE&#34;&gt;pic.twitter.com/pkw3ulxPgE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Python Barcelona (@pybcn) &lt;a href=&#34;https://twitter.com/pybcn/status/789159836730679296&#34;&gt;October 20, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;&amp;quot;Best practices for a Python project&amp;quot; by Enrique Sáez &lt;a href=&#34;https://twitter.com/hashtag/pybcn?src=hash&#34;&gt;#pybcn&lt;/a&gt; &lt;a href=&#34;https://t.co/pkw3ulxPgE&#34;&gt;pic.twitter.com/pkw3ulxPgE&lt;/a&gt;&lt;/p&gt;&amp;mdash; PyDataBCN 2017 (@pybcn) &lt;a href=&#34;https://twitter.com/pybcn/status/789159836730679296&#34;&gt;October 20, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
 
 &lt;p&gt;I also delivered a talk at &lt;a href=&#34;http://lauzhack.com/&#34;&gt;LauzHack&lt;/a&gt; about the &lt;a href=&#34;http://en.business.skyscanner.net/&#34;&gt;Skyscanner API&lt;/a&gt;. Check the &lt;a href=&#34;https://speakerdeck.com/esaezgil/skyscanner-api-guide-lauzhack-16&#34;&gt;slides&lt;/a&gt;.&lt;/p&gt;
@@ -436,10 +438,10 @@ Also check the post about it in the &lt;a href=&#34;http://codevoyagers.com/2016
     
     <item>
       <title>Madrid Python Meetup - November&#39;16</title>
-      <link>https://esaezgil.github.io/post/python_meetup_madrid/</link>
+      <link>http://esaezgil.com/post/python_meetup_madrid/</link>
       <pubDate>Thu, 01 Dec 2016 19:55:00 +0100</pubDate>
       
-      <guid>https://esaezgil.github.io/post/python_meetup_madrid/</guid>
+      <guid>http://esaezgil.com/post/python_meetup_madrid/</guid>
       <description>&lt;p&gt;Last November I attended the &lt;a href=&#34;https://www.meetup.com/Madrid-Python-Meetup/events/235214434/&#34;&gt;Madrid Python Meetup&lt;/a&gt;. Being a regular attendant of &lt;a href=&#34;https://www.meetup.com/python-185/&#34;&gt;Barcelona Python Meetup&lt;/a&gt; I was curious about the Python community in Madrid.
 &lt;/p&gt;
 
@@ -503,10 +505,10 @@ Also check the post about it in the &lt;a href=&#34;http://codevoyagers.com/2016
     
     <item>
       <title>LauzHack - Nov&#39;16</title>
-      <link>https://esaezgil.github.io/events/</link>
+      <link>http://esaezgil.com/events/</link>
       <pubDate>Tue, 22 Nov 2016 18:04:04 +0200</pubDate>
       
-      <guid>https://esaezgil.github.io/events/</guid>
+      <guid>http://esaezgil.com/events/</guid>
       <description>&lt;p&gt;Throughout the weekend of 18th - 20th November I attended &lt;a href=&#34;http://lauzhack.com&#34;&gt;Lauzhack&lt;/a&gt;, a student-organized and student-oriented Hackathon in Lausanne, Switzerland, as a &lt;a href=&#34;http://skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt; representative.&lt;/p&gt;
 
 &lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Such lovely weather! Hackers at &lt;a href=&#34;https://twitter.com/LauzHack&#34;&gt;@LauzHack&lt;/a&gt;, check out the view! The Alps are are visible in all their glory! &lt;a href=&#34;https://twitter.com/hashtag/HackTheAlps?src=hash&#34;&gt;#HackTheAlps&lt;/a&gt; &lt;a href=&#34;https://t.co/32quDX60eW&#34;&gt;pic.twitter.com/32quDX60eW&lt;/a&gt;&lt;/p&gt;&amp;mdash; LauzHack (@LauzHack) &lt;a href=&#34;https://twitter.com/LauzHack/status/799973200994140160&#34;&gt;November 19, 2016&lt;/a&gt;&lt;/blockquote&gt;
@@ -569,10 +571,10 @@ Also check the post about it in the &lt;a href=&#34;http://codevoyagers.com/2016
     
     <item>
       <title>HackUPC&#39;16</title>
-      <link>https://esaezgil.github.io/events/hackupc16/</link>
+      <link>http://esaezgil.com/events/hackupc16/</link>
       <pubDate>Sun, 23 Oct 2016 18:34:25 +0200</pubDate>
       
-      <guid>https://esaezgil.github.io/events/hackupc16/</guid>
+      <guid>http://esaezgil.com/events/hackupc16/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hackupc.com/&#34;&gt;HackUPC&lt;/a&gt; is a student-led and student-oriented hackathon for tech-enthusiast held in Barcelona, at the premises of Universitat Politecnica de Catalunya over the weekend of October 1st 2016.&lt;/p&gt;
 
 &lt;p&gt;I attended the event as a company representative for &lt;a href=&#34;http://skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt;, the main sponsor of the event. The hackathon gathered 500 students from all over the world and was an immense success.&lt;/p&gt;
@@ -602,10 +604,10 @@ Looking forward to attend another hackathon soon enough!
     
     <item>
       <title>About me</title>
-      <link>https://esaezgil.github.io/page/enrique/</link>
+      <link>http://esaezgil.com/page/enrique/</link>
       <pubDate>Sat, 22 Oct 2016 20:17:14 +0200</pubDate>
       
-      <guid>https://esaezgil.github.io/page/enrique/</guid>
+      <guid>http://esaezgil.com/page/enrique/</guid>
       <description>&lt;p&gt;I am a telecom engineer working as a software engineer at &lt;a href=&#34;http://skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt;. This blog is just a quick reference for mainly technical stuff I find interesting. If you wanna get in touch, hit me up on &lt;a href=&#34;https://twitter.com/eqirn&#34;&gt;@equirn&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;You can find more about me listening to this podcast: &lt;a href=&#34;https://soundcloud.com/code-voyagers/episode-4-a-graduates-journey&#34;&gt;Episode 4 – A graduates journey&lt;/a&gt;&lt;/p&gt;
@@ -622,15 +624,15 @@ Looking forward to attend another hackathon soon enough!
     
     <item>
       <title>Talk: Python Best Practices</title>
-      <link>https://esaezgil.github.io/post/python_best_practices/</link>
+      <link>http://esaezgil.com/post/python_best_practices/</link>
       <pubDate>Sat, 22 Oct 2016 19:37:32 +0200</pubDate>
       
-      <guid>https://esaezgil.github.io/post/python_best_practices/</guid>
+      <guid>http://esaezgil.com/post/python_best_practices/</guid>
       <description>&lt;p&gt;Over the last year I have attended the &lt;a href=&#34;https://www.meetup.com/python-185/&#34;&gt;Barcelona Python meetup&lt;/a&gt; hosted at &lt;a href=&#34;http://skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt;&amp;rsquo;s office.
 The meetups were a really positive experience and being a super welcoming community I decided to deliver a talk.
 &lt;/p&gt;
 
-&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;&amp;quot;Best practices for a Python project&amp;quot; by Enrique Sáez &lt;a href=&#34;https://twitter.com/hashtag/pybcn?src=hash&#34;&gt;#pybcn&lt;/a&gt; &lt;a href=&#34;https://t.co/pkw3ulxPgE&#34;&gt;pic.twitter.com/pkw3ulxPgE&lt;/a&gt;&lt;/p&gt;&amp;mdash; Python Barcelona (@pybcn) &lt;a href=&#34;https://twitter.com/pybcn/status/789159836730679296&#34;&gt;October 20, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;und&#34; dir=&#34;ltr&#34;&gt;&amp;quot;Best practices for a Python project&amp;quot; by Enrique Sáez &lt;a href=&#34;https://twitter.com/hashtag/pybcn?src=hash&#34;&gt;#pybcn&lt;/a&gt; &lt;a href=&#34;https://t.co/pkw3ulxPgE&#34;&gt;pic.twitter.com/pkw3ulxPgE&lt;/a&gt;&lt;/p&gt;&amp;mdash; PyDataBCN 2017 (@pybcn) &lt;a href=&#34;https://twitter.com/pybcn/status/789159836730679296&#34;&gt;October 20, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/blockquote&gt;
 
 &lt;p&gt;During the talk I covered the most common Python project&amp;rsquo;s structure and the resasoning behind it. I also went over the usual ways for distributing a Python Project and the popular testing tools available. Finally I also mentioned some of the widely regarded best practices for Python like PEP8.&lt;/p&gt;
@@ -648,25 +650,26 @@ The meetups were a really positive experience and being a super welcoming commun
     
     <item>
       <title>Talks</title>
-      <link>https://esaezgil.github.io/page/talks/</link>
+      <link>http://esaezgil.com/page/talks/</link>
       <pubDate>Sat, 22 Oct 2016 18:30:50 +0200</pubDate>
       
-      <guid>https://esaezgil.github.io/page/talks/</guid>
+      <guid>http://esaezgil.com/page/talks/</guid>
       <description>&lt;p&gt;I delivered a short closing talk at HackUPC&amp;rsquo;16: &lt;a href=&#34;https://www.youtube.com/watch?v=PD2KGBIVbI0&amp;amp;feature=youtu.be&amp;amp;t=3664&#34;&gt;Link to talk&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Contributing to Pretix</title>
-      <link>https://esaezgil.github.io/post/contributing-to-pretix/</link>
+      <link>http://esaezgil.com/post/contributing-to-pretix/</link>
       <pubDate>Sun, 04 Sep 2016 13:24:25 +0000</pubDate>
       
-      <guid>https://esaezgil.github.io/post/contributing-to-pretix/</guid>
+      <guid>http://esaezgil.com/post/contributing-to-pretix/</guid>
       <description>&lt;p&gt;Recently I had the chance to contribute to Pretix (&lt;a href=&#34;https://pretix.eu/about/en/&#34;&gt;https://pretix.eu/about/en/&lt;/a&gt;) a Django-based event ticketing platform.&lt;/p&gt;
 
-&lt;p&gt;The Merge Request is here: &lt;a href=&#34;https://github.com/pretix/pretix/pull/204/files&#34;&gt;https://github.com/pretix/pretix/pull/204/files&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I submitted a couple of merge requests that were accepted:
+ - &lt;a href=&#34;https://github.com/pretix/pretix/pull/202/files&#34;&gt;https://github.com/pretix/pretix/pull/202/files&lt;/a&gt; &lt;a href=&#34;https://github.com/pretix/pretix/pull/204/files&#34;&gt;https://github.com/pretix/pretix/pull/204/files&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Key learnings:&lt;/p&gt;
+&lt;p&gt;I will briefly detail some of the key learnings:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;&lt;strong&gt;Django models&lt;/strong&gt;: Being absolutely new to Django, I had the opportunity to learn along the way about one of its key features, the Models.
@@ -706,10 +709,10 @@ By using &lt;code&gt;select_related&lt;/code&gt; instead of &lt;code&gt;prefetch
     
     <item>
       <title>Contributing to aiohttp</title>
-      <link>https://esaezgil.github.io/post/using-namedtuples-in-aiohttp/</link>
+      <link>http://esaezgil.com/post/using-namedtuples-in-aiohttp/</link>
       <pubDate>Sat, 03 Sep 2016 14:34:00 +0000</pubDate>
       
-      <guid>https://esaezgil.github.io/post/using-namedtuples-in-aiohttp/</guid>
+      <guid>http://esaezgil.com/post/using-namedtuples-in-aiohttp/</guid>
       <description>&lt;p&gt;Recently I had the opportunity to contribute to the &lt;a href=&#34;https://github.com/KeepSafe/aiohttp/&#34;&gt;&lt;strong&gt;aiohttp&lt;/strong&gt; library&lt;/a&gt;. This is one of the libraries that we, the &lt;a href=&#34;https://www.skyscanner.net/hotels&#34;&gt;Hotels&lt;/a&gt; backend team at &lt;a href=&#34;https://www.skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt;, make use of on a daily basis to create a new backend service. 
 In this post I will briefly explain the main learnings from this contribution.&lt;/p&gt;
 
@@ -756,10 +759,10 @@ In this case I had written tests that checked the actual functionality on a high
     
     <item>
       <title>THack Mallorca - May&#39;16</title>
-      <link>https://esaezgil.github.io/events/thackmallorca16/</link>
+      <link>http://esaezgil.com/events/thackmallorca16/</link>
       <pubDate>Wed, 25 May 2016 18:04:04 +0200</pubDate>
       
-      <guid>https://esaezgil.github.io/events/thackmallorca16/</guid>
+      <guid>http://esaezgil.com/events/thackmallorca16/</guid>
       <description>&lt;p&gt;During Friday night May 6 through Sunday May 8 I attended &lt;a href=&#34;https://www.tnooz.com/event/thack-mallorca-2016/&#34;&gt;THack Mallorca&lt;/a&gt;, a Hackathon organized by &lt;a href=&#34;https://tnooz.com&#34;&gt;Tnooz&lt;/a&gt;, a global provider of news and analysis to the travel industry.&lt;/p&gt;
 
 &lt;blockquote class=&#34;twitter-tweet tw-align-center&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;More than 100 pro and student devs signed up for &lt;a href=&#34;https://twitter.com/hashtag/thackmallorca?src=hash&#34;&gt;#thackmallorca&lt;/a&gt; &lt;a href=&#34;https://twitter.com/tnooz&#34;&gt;@tnooz&lt;/a&gt; &lt;a href=&#34;https://t.co/SajkdBcivu&#34;&gt;pic.twitter.com/SajkdBcivu&lt;/a&gt;&lt;/p&gt;&amp;mdash; Gene Quinn (@genequinn) &lt;a href=&#34;https://twitter.com/genequinn/status/728798299474546688&#34;&gt;May 7, 2016&lt;/a&gt;&lt;/blockquote&gt;
