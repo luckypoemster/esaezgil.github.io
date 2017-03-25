@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Hej, I&#39;m Enrique</title>
-    <link>http://esaezgil.com/page/index.xml</link>
+    <link>https://esaezgil.github.io/page/index.xml</link>
     <description>Recent content in Pages on Hej, I&#39;m Enrique</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 22 Oct 2016 20:17:14 +0200</lastBuildDate>
-    <atom:link href="http://esaezgil.com/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://esaezgil.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About me</title>
-      <link>http://esaezgil.com/page/enrique/</link>
+      <link>https://esaezgil.github.io/page/enrique/</link>
       <pubDate>Sat, 22 Oct 2016 20:17:14 +0200</pubDate>
       
-      <guid>http://esaezgil.com/page/enrique/</guid>
+      <guid>https://esaezgil.github.io/page/enrique/</guid>
       <description>&lt;p&gt;I am a telecom engineer working as a software engineer at &lt;a href=&#34;http://skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt;. This blog is just a quick reference for mainly technical stuff I find interesting. If you wanna get in touch, hit me up on &lt;a href=&#34;https://twitter.com/eqirn&#34;&gt;@equirn&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;You can find more about me listening to this podcast: &lt;a href=&#34;https://soundcloud.com/code-voyagers/episode-4-a-graduates-journey&#34;&gt;Episode 4 – A graduates journey&lt;/a&gt;&lt;/p&gt;
@@ -31,20 +31,20 @@
     
     <item>
       <title>Talks</title>
-      <link>http://esaezgil.com/page/talks/</link>
+      <link>https://esaezgil.github.io/page/talks/</link>
       <pubDate>Sat, 22 Oct 2016 18:30:50 +0200</pubDate>
       
-      <guid>http://esaezgil.com/page/talks/</guid>
+      <guid>https://esaezgil.github.io/page/talks/</guid>
       <description>&lt;p&gt;I delivered a short closing talk at HackUPC&amp;rsquo;16: &lt;a href=&#34;https://www.youtube.com/watch?v=PD2KGBIVbI0&amp;amp;feature=youtu.be&amp;amp;t=3664&#34;&gt;Link to talk&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Books</title>
-      <link>http://esaezgil.com/page/books/</link>
+      <link>https://esaezgil.github.io/page/books/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://esaezgil.com/page/books/</guid>
+      <guid>https://esaezgil.github.io/page/books/</guid>
       <description>&lt;p&gt;Find more about the books I have enjoyed lately:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -58,10 +58,10 @@
     
     <item>
       <title>Current and past books</title>
-      <link>http://esaezgil.com/page/books_finished/</link>
+      <link>https://esaezgil.github.io/page/books_finished/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://esaezgil.com/page/books_finished/</guid>
+      <guid>https://esaezgil.github.io/page/books_finished/</guid>
       <description>&lt;p&gt;This is a brief list of the books I have read recently or I am reading at the moment:&lt;/p&gt;
 
 &lt;p&gt;&lt;center&gt;
@@ -201,10 +201,10 @@ This is a book we gave away as a prize at the &lt;a href=&#34;http://lauzhack.co
     
     <item>
       <title>Next books</title>
-      <link>http://esaezgil.com/page/next_books/</link>
+      <link>https://esaezgil.github.io/page/next_books/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://esaezgil.com/page/next_books/</guid>
+      <guid>https://esaezgil.github.io/page/next_books/</guid>
       <description>&lt;p&gt;This is a list of books I want to read next, &lt;strong&gt;feel free to recommend me some other books in the comments below&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;p&gt;&lt;center&gt;
