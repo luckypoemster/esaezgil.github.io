@@ -198,7 +198,7 @@
 
 <p>However, this does not imply that the integration with third-party services should not be tested through integration tests as I detailed in <a href="http://esaezgil.com/post/test_driven_API/">my previous post about test driven APIs</a></p>
 
-<p>A similar example is the following one in which the calls to a the <a href="https://redis.io/">Redis database</a> required patching:</p>
+<p>A similar example is the following one in which the calls to the <a href="https://redis.io/">Redis database</a> required patching:</p>
 
 <ul>
 <li><a href="http://stackoverflow.com/questions/42819073/mocking-api-calls-in-unit-testing/42820601">Mocking API calls in unit testing</a></li>
@@ -236,7 +236,7 @@
 
 <h2 id="testing-exceptions">Testing exceptions:</h2>
 
-<p>One of the key behaviors to test are exception handling. As I suggested in this answer, the way to test that exceptions are raised is by patching the call that can raise the exception. This can be achieved through the <code>side_effect</code> function.</p>
+<p>One of the key behaviors to test are exception handling. The way to test that exceptions are raised is by patching the call that can raise the exception. This can be achieved through the <code>side_effect</code> function.</p>
 
 <p>The next example shows how to force raising an exception to test that it is properly managed.</p>
 
@@ -264,7 +264,7 @@
     draft_4_validator_mock<span style="color: #555555">.</span>assert_called()
 </pre></div>
 
-<p>The person asking was trying to use the patch wrong and not taking advantage of <code>side_effect</code>. As it can be seen, every time the <code>jsonschema</code> function of the module being tested was being called, a <code>Draft4Validator</code> object would have been created (had the class been correctly instantiated).</p>
+<p>The person asking was trying to use the patch wrong and not taking advantage of <code>side_effect</code>. As it can be seen, every time the <code>jsonschema</code> function of the module being tested was called, a <code>Draft4Validator</code> object would have been created (had the class been correctly instantiated).</p>
 
 <p>Instead, the Draft4Validator object is the one to be mocked and the relevant calls to any of its methods the ones to be patched.
 An example of such way to proceed can be found in the answer I posted:</p>
@@ -294,7 +294,7 @@ An example of such way to proceed can be found in the answer I posted:</p>
 
 <h2 id="testing-that-exceptions-are-raised">Testing that exceptions are raised</h2>
 
-<p>Fortunately, pytest provides powerful features to test to [assert that exceptions are raised](). Some examples of wrong usage of such features ensues:</p>
+<p>Fortunately, pytest provides powerful features to <a href="http://doc.pytest.org/en/latest/assert.html#assertions-about-expected-exceptions">test that exceptions are handled properly</a>.</p>
 
 <p>The next example shows how to force raising an exception and test that it actually raised:</p>
 

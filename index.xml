@@ -81,7 +81,7 @@
 
 &lt;p&gt;However, this does not imply that the integration with third-party services should not be tested through integration tests as I detailed in &lt;a href=&#34;http://esaezgil.com/post/test_driven_API/&#34;&gt;my previous post about test driven APIs&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;A similar example is the following one in which the calls to a the &lt;a href=&#34;https://redis.io/&#34;&gt;Redis database&lt;/a&gt; required patching:&lt;/p&gt;
+&lt;p&gt;A similar example is the following one in which the calls to the &lt;a href=&#34;https://redis.io/&#34;&gt;Redis database&lt;/a&gt; required patching:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://stackoverflow.com/questions/42819073/mocking-api-calls-in-unit-testing/42820601&#34;&gt;Mocking API calls in unit testing&lt;/a&gt;&lt;/li&gt;
@@ -119,7 +119,7 @@
 
 &lt;h2 id=&#34;testing-exceptions&#34;&gt;Testing exceptions:&lt;/h2&gt;
 
-&lt;p&gt;One of the key behaviors to test are exception handling. As I suggested in this answer, the way to test that exceptions are raised is by patching the call that can raise the exception. This can be achieved through the &lt;code&gt;side_effect&lt;/code&gt; function.&lt;/p&gt;
+&lt;p&gt;One of the key behaviors to test are exception handling. The way to test that exceptions are raised is by patching the call that can raise the exception. This can be achieved through the &lt;code&gt;side_effect&lt;/code&gt; function.&lt;/p&gt;
 
 &lt;p&gt;The next example shows how to force raising an exception to test that it is properly managed.&lt;/p&gt;
 
@@ -147,7 +147,7 @@
     draft_4_validator_mock&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;assert_called()
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;The person asking was trying to use the patch wrong and not taking advantage of &lt;code&gt;side_effect&lt;/code&gt;. As it can be seen, every time the &lt;code&gt;jsonschema&lt;/code&gt; function of the module being tested was being called, a &lt;code&gt;Draft4Validator&lt;/code&gt; object would have been created (had the class been correctly instantiated).&lt;/p&gt;
+&lt;p&gt;The person asking was trying to use the patch wrong and not taking advantage of &lt;code&gt;side_effect&lt;/code&gt;. As it can be seen, every time the &lt;code&gt;jsonschema&lt;/code&gt; function of the module being tested was called, a &lt;code&gt;Draft4Validator&lt;/code&gt; object would have been created (had the class been correctly instantiated).&lt;/p&gt;
 
 &lt;p&gt;Instead, the Draft4Validator object is the one to be mocked and the relevant calls to any of its methods the ones to be patched.
 An example of such way to proceed can be found in the answer I posted:&lt;/p&gt;
@@ -177,7 +177,7 @@ An example of such way to proceed can be found in the answer I posted:&lt;/p&gt;
 
 &lt;h2 id=&#34;testing-that-exceptions-are-raised&#34;&gt;Testing that exceptions are raised&lt;/h2&gt;
 
-&lt;p&gt;Fortunately, pytest provides powerful features to test to [assert that exceptions are raised](). Some examples of wrong usage of such features ensues:&lt;/p&gt;
+&lt;p&gt;Fortunately, pytest provides powerful features to &lt;a href=&#34;http://doc.pytest.org/en/latest/assert.html#assertions-about-expected-exceptions&#34;&gt;test that exceptions are handled properly&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The next example shows how to force raising an exception and test that it actually raised:&lt;/p&gt;
 
