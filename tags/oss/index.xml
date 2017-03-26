@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Oss on Hej, I&#39;m Enrique</title>
-    <link>https://esaezgil.github.io/tags/oss/index.xml</link>
+    <link>https://esaezgil.com/tags/oss/index.xml</link>
     <description>Recent content in Oss on Hej, I&#39;m Enrique</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://esaezgil.github.io/tags/oss/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://esaezgil.com/tags/oss/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Contributing to Pretix</title>
-      <link>https://esaezgil.github.io/post/contributing-to-pretix/</link>
+      <link>https://esaezgil.com/post/contributing-to-pretix/</link>
       <pubDate>Sun, 04 Sep 2016 13:24:25 +0000</pubDate>
       
-      <guid>https://esaezgil.github.io/post/contributing-to-pretix/</guid>
+      <guid>https://esaezgil.com/post/contributing-to-pretix/</guid>
       <description>&lt;p&gt;Recently I had the chance to contribute to Pretix (&lt;a href=&#34;https://pretix.eu/about/en/&#34;&gt;https://pretix.eu/about/en/&lt;/a&gt;) a Django-based event ticketing platform.&lt;/p&gt;
 
 &lt;p&gt;I submitted a couple of merge requests that were accepted:
@@ -59,10 +59,10 @@ By using &lt;code&gt;select_related&lt;/code&gt; instead of &lt;code&gt;prefetch
     
     <item>
       <title>Contributing to aiohttp</title>
-      <link>https://esaezgil.github.io/post/using-namedtuples-in-aiohttp/</link>
+      <link>https://esaezgil.com/post/using-namedtuples-in-aiohttp/</link>
       <pubDate>Sat, 03 Sep 2016 14:34:00 +0000</pubDate>
       
-      <guid>https://esaezgil.github.io/post/using-namedtuples-in-aiohttp/</guid>
+      <guid>https://esaezgil.com/post/using-namedtuples-in-aiohttp/</guid>
       <description>&lt;p&gt;Recently I had the opportunity to contribute to the &lt;a href=&#34;https://github.com/KeepSafe/aiohttp/&#34;&gt;&lt;strong&gt;aiohttp&lt;/strong&gt; library&lt;/a&gt;. This is one of the libraries that we, the &lt;a href=&#34;https://www.skyscanner.net/hotels&#34;&gt;Hotels&lt;/a&gt; backend team at &lt;a href=&#34;https://www.skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt;, make use of on a daily basis to create a new backend service. 
 In this post I will briefly explain the main learnings from this contribution.&lt;/p&gt;
 
