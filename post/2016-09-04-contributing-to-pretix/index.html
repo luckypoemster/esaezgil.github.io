@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Talk: Python Best Practices</title>
+  <title>Contributing to Pretix</title>
 
   <meta name="author" content="Enrique Saez Gil" />
   
@@ -24,9 +24,9 @@
   <link rel="stylesheet" href="https://esaezgil.com/css/pygment_highlights.css" />
   
   
-  <meta property="og:title" content="Talk: Python Best Practices" />
+  <meta property="og:title" content="Contributing to Pretix" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/post/python_best_practices//" />
+  <meta property="og:url" content="/post/2016-09-04-contributing-to-pretix//" />
   <meta property="og:image" content="img/icon.jpg" />
   
 </head>
@@ -112,11 +112,11 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="post-heading">
-          <h1>Talk: Python Best Practices</h1>
+          <h1>Contributing to Pretix</h1>
       
       
       
-      <span class="post-meta">Posted on October 22, 2016</span>
+      <span class="post-meta">Posted on September 4, 2016</span>
       
         </div>
       </div>
@@ -132,35 +132,58 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-          <p>Over the last year I have attended the <a href="https://www.meetup.com/python-185/">Barcelona Python meetup</a> hosted at <a href="http://skyscanner.net">Skyscanner</a>&rsquo;s office.
-The meetups were a really positive experience and being a super welcoming community I decided to deliver a talk.
-</p>
+          <p>Recently I had the chance to contribute to Pretix (<a href="https://pretix.eu/about/en/">https://pretix.eu/about/en/</a>) a Django-based event ticketing platform.</p>
 
-<blockquote class="twitter-tweet tw-align-center"><blockquote class="twitter-tweet"><p lang="und" dir="ltr">&quot;Best practices for a Python project&quot; by Enrique Sáez <a href="https://twitter.com/hashtag/pybcn?src=hash">#pybcn</a> <a href="https://t.co/pkw3ulxPgE">pic.twitter.com/pkw3ulxPgE</a></p>&mdash; PyDataBCN 2017 (@pybcn) <a href="https://twitter.com/pybcn/status/789159836730679296">October 20, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></blockquote>
+<p>I submitted a couple of merge requests that were accepted:
+ - <a href="https://github.com/pretix/pretix/pull/202/files">https://github.com/pretix/pretix/pull/202/files</a> <a href="https://github.com/pretix/pretix/pull/204/files">https://github.com/pretix/pretix/pull/204/files</a></p>
 
-<p>During the talk I covered the most common Python project&rsquo;s structure and the resasoning behind it. I also went over the usual ways for distributing a Python Project and the popular testing tools available. Finally I also mentioned some of the widely regarded best practices for Python like PEP8.</p>
+<p>I will briefly detail some of the key learnings:</p>
 
-<p><strong>Slides:</strong></p>
+<ol>
+<li><p><strong>Django models</strong>: Being absolutely new to Django, I had the opportunity to learn along the way about one of its key features, the Models.
+Models are objects that the ORM will store in the database, a quick intro here: 
+<a href="http://tutorial.djangogirls.org/en/django_orm/">http://tutorial.djangogirls.org/en/django_orm/</a>
+It was quite surprising as well the ease of the development thanks to the automatic migrations in the database schema.
+More detailed info on Models here:
+<a href="http://www.djangobook.com/en/2.0/chapter05.html">http://www.djangobook.com/en/2.0/chapter05.html</a></p></li>
 
-<script async class='speakerdeck-embed' data-id='2e42ac8c87a24bc3ad90cc5a40cc894a' data-ratio='1.33333333333333' src='//speakerdeck.com/assets/embed.js'></script>
+<li><p><strong>all keyword in Python</strong>:
+In order to check whether a condition was True for all the elements of a list I simply iterated over them and checked for the condition:</p>
+<div class="highlight" style="background: #f0f3f3"><pre style="line-height: 125%"><span style="color: #006699; font-weight: bold">for</span> i, op <span style="color: #000000; font-weight: bold">in</span> <span style="color: #336666">enumerate</span>(positions):
+    cancelable_products<span style="color: #555555">.</span>append(op<span style="color: #555555">.</span>item<span style="color: #555555">.</span>allow_cancel)
+<span style="color: #006699; font-weight: bold">if</span> <span style="color: #336666">False</span> <span style="color: #000000; font-weight: bold">in</span> cancelable_products:
+    cancelable <span style="color: #555555">=</span> <span style="color: #336666">False</span>
+</pre></div>
 
-<p><strong>GitHub repo</strong></p>
+<p>However a much simpler solution making use of list comprehensions and the all() keyword in Python is possible:</p>
+<div class="highlight" style="background: #f0f3f3"><pre style="line-height: 125%">cancelable <span style="color: #555555">=</span> <span style="color: #336666">all</span>([op<span style="color: #555555">.</span>item<span style="color: #555555">.</span>allow_cancel <span style="color: #006699; font-weight: bold">for</span> op <span style="color: #000000; font-weight: bold">in</span> positions])
+</pre></div></li>
 
-<p><a href="https://github.com/esaezgil/pythonBestPractices">https://github.com/esaezgil/pythonBestPractices</a></p>
+<li><p><strong>Metaclasses in Python</strong>:
+Although I had read about Python Metaclasses in this excellent post (<a href="https://jeffknupp.com/blog/2013/12/28/improve-your-python-metaclasses-and-dynamic-classes-with-type/">https://jeffknupp.com/blog/2013/12/28/improve-your-python-metaclasses-and-dynamic-classes-with-type/</a>), Django Models are a really good practical example of their value and use.
+The Metaclasses are used in the Django Models to dynamically create classes.</p></li>
 
-<p>Unfortunately due to technical problems the talk was not recorded :(</p>
+<li><p><strong>Difference between select_related and prefetch_related in Django:</strong>
+<strong>prefetch_related</strong>: does a separate lookup for each relationship, and does the ‘joining’ in Python. This allows it to prefetch many-to-many and many-to-one objects.
+<br>
+<strong>select_related</strong>: limited to single-valued relationships - foreign key and one-to-one. Creates an SQL join including the fields of the related object in the <code>SELECT</code>statement retrieving the related objects in the same (but more complex) database query.
+<br>
+By using <code>select_related</code> instead of <code>prefetch_related</code>, one query to the DB is saved.
+ More info on Django QuerySet: <a href="https://docs.djangoproject.com/en/1.10/ref/models/querysets/">https://docs.djangoproject.com/en/1.10/ref/models/querysets/</a></p></li>
+</ol>
+
+<p>Head over to this post for more details on Metaclasses in Django: <a href="http://reinout.vanrees.org/weblog/2013/05/16/advanced-python-metaclasses.html">http://reinout.vanrees.org/weblog/2013/05/16/advanced-python-metaclasses.html</a></p>
       </article>
 
       <ul class="pager blog-pager">
         
         <li class="previous">
-          <a href="https://esaezgil.com/post/2016-09-04-contributing-to-pretix/" data-toggle="tooltip" data-placement="top" title="Contributing to Pretix">&larr; Previous Post</a>
+          <a href="https://esaezgil.com/post/2016-09-03-using-namedtuples-in-aiohttp/" data-toggle="tooltip" data-placement="top" title="Contributing to aiohttp">&larr; Previous Post</a>
         </li>
         
         
         <li class="next">
-          <a href="https://esaezgil.com/post/python_meetup_madrid/" data-toggle="tooltip" data-placement="top" title="Madrid Python Meetup - November&#39;16">Next Post &rarr;</a>
+          <a href="https://esaezgil.com/post/python_best_practices/" data-toggle="tooltip" data-placement="top" title="Talk: Python Best Practices">Next Post &rarr;</a>
         </li>
         
       </ul>
@@ -170,9 +193,9 @@ The meetups were a really positive experience and being a super welcoming commun
         <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'esaezgil';
-    var disqus_identifier = 'https:\/\/esaezgil.com\/post\/python_best_practices\/';
-    var disqus_title = 'Talk: Python Best Practices';
-    var disqus_url = 'https:\/\/esaezgil.com\/post\/python_best_practices\/';
+    var disqus_identifier = 'https:\/\/esaezgil.com\/post\/2016-09-04-contributing-to-pretix\/';
+    var disqus_title = 'Contributing to Pretix';
+    var disqus_url = 'https:\/\/esaezgil.com\/post\/2016-09-04-contributing-to-pretix\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

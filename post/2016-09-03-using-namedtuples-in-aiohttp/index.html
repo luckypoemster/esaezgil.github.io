@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Talk: Python Best Practices</title>
+  <title>Contributing to aiohttp</title>
 
   <meta name="author" content="Enrique Saez Gil" />
   
@@ -24,9 +24,9 @@
   <link rel="stylesheet" href="https://esaezgil.com/css/pygment_highlights.css" />
   
   
-  <meta property="og:title" content="Talk: Python Best Practices" />
+  <meta property="og:title" content="Contributing to aiohttp" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="/post/python_best_practices//" />
+  <meta property="og:url" content="/post/2016-09-03-using-namedtuples-in-aiohttp//" />
   <meta property="og:image" content="img/icon.jpg" />
   
 </head>
@@ -112,11 +112,11 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="post-heading">
-          <h1>Talk: Python Best Practices</h1>
+          <h1>Contributing to aiohttp</h1>
       
       
       
-      <span class="post-meta">Posted on October 22, 2016</span>
+      <span class="post-meta">Posted on September 3, 2016</span>
       
         </div>
       </div>
@@ -132,35 +132,55 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-          <p>Over the last year I have attended the <a href="https://www.meetup.com/python-185/">Barcelona Python meetup</a> hosted at <a href="http://skyscanner.net">Skyscanner</a>&rsquo;s office.
-The meetups were a really positive experience and being a super welcoming community I decided to deliver a talk.
-</p>
+          <p>Recently I had the opportunity to contribute to the <a href="https://github.com/KeepSafe/aiohttp/"><strong>aiohttp</strong> library</a>. This is one of the libraries that we, the <a href="https://www.skyscanner.net/hotels">Hotels</a> backend team at <a href="https://www.skyscanner.net">Skyscanner</a>, make use of on a daily basis to create a new backend service. 
+In this post I will briefly explain the main learnings from this contribution.</p>
 
-<blockquote class="twitter-tweet tw-align-center"><blockquote class="twitter-tweet"><p lang="und" dir="ltr">&quot;Best practices for a Python project&quot; by Enrique Sáez <a href="https://twitter.com/hashtag/pybcn?src=hash">#pybcn</a> <a href="https://t.co/pkw3ulxPgE">pic.twitter.com/pkw3ulxPgE</a></p>&mdash; PyDataBCN 2017 (@pybcn) <a href="https://twitter.com/pybcn/status/789159836730679296">October 20, 2016</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></blockquote>
+<p>The pull request can be found here:
+<a href="https://github.com/KeepSafe/aiohttp/pull/1020/files">https://github.com/KeepSafe/aiohttp/pull/1020/files</a></p>
 
-<p>During the talk I covered the most common Python project&rsquo;s structure and the resasoning behind it. I also went over the usual ways for distributing a Python Project and the popular testing tools available. Finally I also mentioned some of the widely regarded best practices for Python like PEP8.</p>
+<p>Key learnings:</p>
 
-<p><strong>Slides:</strong></p>
+<ol>
+<li><p>Living on the edge:</p>
 
-<script async class='speakerdeck-embed' data-id='2e42ac8c87a24bc3ad90cc5a40cc894a' data-ratio='1.33333333333333' src='//speakerdeck.com/assets/embed.js'></script>
+<p>Working in the <em>master</em> branch of a project means that sometimes it may be unhealthy.
+It is always good advice to check whether <em>master</em> is healthy or not when you submit your MR to the CI system (<a href="https://travis-ci.org/KeepSafe/aiohttp">Travis CI</a> in this case) before pulling your hair searching for a non existing bug in your code.</p></li>
 
-<p><strong>GitHub repo</strong></p>
+<li><p>Namedtuples can be used to define a class through inheritance and by implementing the <strong>bool</strong> method,</p>
+<div class="highlight" style="background: #f0f3f3"><pre style="line-height: 125%"><span style="color: #006699; font-weight: bold">class</span> <span style="color: #00AA88; font-weight: bold">WebSocketReady</span>(namedtuple(<span style="color: #CC3300">&#39;WebSocketReady&#39;</span>, <span style="color: #CC3300">&#39;ok protocol&#39;</span>)):
+    <span style="color: #006699; font-weight: bold">def</span> <span style="color: #CC00FF">__bool__</span>(<span style="color: #336666">self</span>):
+        <span style="color: #006699; font-weight: bold">return</span> <span style="color: #336666">self</span><span style="color: #555555">.</span>ok
+</pre></div>
 
-<p><a href="https://github.com/esaezgil/pythonBestPractices">https://github.com/esaezgil/pythonBestPractices</a></p>
+<p>it is really easy to check for a condition:</p>
+<div class="highlight" style="background: #f0f3f3"><pre style="line-height: 125%"><span style="color: #006699; font-weight: bold">if</span> WebSocketReady:
+<span style="color: #555555">...</span>
+</pre></div></li>
 
-<p>Unfortunately due to technical problems the talk was not recorded :(</p>
+<li><p>Write Unit Tests:
+This might be obvious, but the point is not just to write them but to write them for every piece of code created.
+In this case I had written tests that checked the actual functionality on a high level like:</p>
+<div class="highlight" style="background: #f0f3f3"><pre style="line-height: 125%"><span style="color: #006699; font-weight: bold">def</span> <span style="color: #CC00FF">test_websocket_not_ready</span>():
+    websocket_ready <span style="color: #555555">=</span> WebSocketReady(<span style="color: #336666">False</span>, <span style="color: #336666">None</span>)
+    <span style="color: #006699; font-weight: bold">assert</span> websocket_ready<span style="color: #555555">.</span>ok <span style="color: #000000; font-weight: bold">is</span> <span style="color: #336666">False</span>
+    <span style="color: #006699; font-weight: bold">assert</span> websocket_ready<span style="color: #555555">.</span>protocol <span style="color: #000000; font-weight: bold">is</span> <span style="color: #336666">None</span>
+</pre></div>
+
+<p>But not the tests that checked the low level functionality like:</p>
+<div class="highlight" style="background: #f0f3f3"><pre style="line-height: 125%"><span style="color: #006699; font-weight: bold">def</span> <span style="color: #CC00FF">test_bool_websocket_not_ready</span>():
+    websocket_ready <span style="color: #555555">=</span> WebSocketReady(<span style="color: #336666">False</span>, <span style="color: #336666">None</span>)
+    <span style="color: #006699; font-weight: bold">assert</span> <span style="color: #336666">bool</span>(websocket_ready) <span style="color: #000000; font-weight: bold">is</span> <span style="color: #336666">False</span>
+</pre></div></li>
+</ol>
+
+<p>Always good to bear in mind.</p>
       </article>
 
       <ul class="pager blog-pager">
         
-        <li class="previous">
-          <a href="https://esaezgil.com/post/2016-09-04-contributing-to-pretix/" data-toggle="tooltip" data-placement="top" title="Contributing to Pretix">&larr; Previous Post</a>
-        </li>
-        
         
         <li class="next">
-          <a href="https://esaezgil.com/post/python_meetup_madrid/" data-toggle="tooltip" data-placement="top" title="Madrid Python Meetup - November&#39;16">Next Post &rarr;</a>
+          <a href="https://esaezgil.com/post/2016-09-04-contributing-to-pretix/" data-toggle="tooltip" data-placement="top" title="Contributing to Pretix">Next Post &rarr;</a>
         </li>
         
       </ul>
@@ -170,9 +190,9 @@ The meetups were a really positive experience and being a super welcoming commun
         <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'esaezgil';
-    var disqus_identifier = 'https:\/\/esaezgil.com\/post\/python_best_practices\/';
-    var disqus_title = 'Talk: Python Best Practices';
-    var disqus_url = 'https:\/\/esaezgil.com\/post\/python_best_practices\/';
+    var disqus_identifier = 'https:\/\/esaezgil.com\/post\/2016-09-03-using-namedtuples-in-aiohttp\/';
+    var disqus_title = 'Contributing to aiohttp';
+    var disqus_url = 'https:\/\/esaezgil.com\/post\/2016-09-03-using-namedtuples-in-aiohttp\/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

@@ -894,10 +894,10 @@ The meetups were a really positive experience and being a super welcoming commun
     
     <item>
       <title>Contributing to Pretix</title>
-      <link>https://esaezgil.com/post/contributing-to-pretix/</link>
-      <pubDate>Sun, 04 Sep 2016 13:24:25 +0000</pubDate>
+      <link>https://esaezgil.com/post/2016-09-04-contributing-to-pretix/</link>
+      <pubDate>Sun, 04 Sep 2016 13:24:25 +0100</pubDate>
       
-      <guid>https://esaezgil.com/post/contributing-to-pretix/</guid>
+      <guid>https://esaezgil.com/post/2016-09-04-contributing-to-pretix/</guid>
       <description>&lt;p&gt;Recently I had the chance to contribute to Pretix (&lt;a href=&#34;https://pretix.eu/about/en/&#34;&gt;https://pretix.eu/about/en/&lt;/a&gt;) a Django-based event ticketing platform.&lt;/p&gt;
 
 &lt;p&gt;I submitted a couple of merge requests that were accepted:
@@ -943,10 +943,10 @@ By using &lt;code&gt;select_related&lt;/code&gt; instead of &lt;code&gt;prefetch
     
     <item>
       <title>Contributing to aiohttp</title>
-      <link>https://esaezgil.com/post/using-namedtuples-in-aiohttp/</link>
-      <pubDate>Sat, 03 Sep 2016 14:34:00 +0000</pubDate>
+      <link>https://esaezgil.com/post/2016-09-03-using-namedtuples-in-aiohttp/</link>
+      <pubDate>Sat, 03 Sep 2016 14:34:00 +0100</pubDate>
       
-      <guid>https://esaezgil.com/post/using-namedtuples-in-aiohttp/</guid>
+      <guid>https://esaezgil.com/post/2016-09-03-using-namedtuples-in-aiohttp/</guid>
       <description>&lt;p&gt;Recently I had the opportunity to contribute to the &lt;a href=&#34;https://github.com/KeepSafe/aiohttp/&#34;&gt;&lt;strong&gt;aiohttp&lt;/strong&gt; library&lt;/a&gt;. This is one of the libraries that we, the &lt;a href=&#34;https://www.skyscanner.net/hotels&#34;&gt;Hotels&lt;/a&gt; backend team at &lt;a href=&#34;https://www.skyscanner.net&#34;&gt;Skyscanner&lt;/a&gt;, make use of on a daily basis to create a new backend service. 
 In this post I will briefly explain the main learnings from this contribution.&lt;/p&gt;
 
@@ -969,7 +969,7 @@ It is always good advice to check whether &lt;em&gt;master&lt;/em&gt; is healthy
 
 &lt;p&gt;it is really easy to check for a condition:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34; style=&#34;background: #f0f3f3&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #006699; font-weight: bold&#34;&gt;if&lt;/span&gt; WebSocketReady:
-&lt;span style=&#34;color: #555555&#34;&gt;...&lt;/span&gt; 
+&lt;span style=&#34;color: #555555&#34;&gt;...&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Write Unit Tests:
@@ -978,7 +978,7 @@ In this case I had written tests that checked the actual functionality on a high
 &lt;div class=&#34;highlight&#34; style=&#34;background: #f0f3f3&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #006699; font-weight: bold&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color: #CC00FF&#34;&gt;test_websocket_not_ready&lt;/span&gt;():
     websocket_ready &lt;span style=&#34;color: #555555&#34;&gt;=&lt;/span&gt; WebSocketReady(&lt;span style=&#34;color: #336666&#34;&gt;False&lt;/span&gt;, &lt;span style=&#34;color: #336666&#34;&gt;None&lt;/span&gt;)
     &lt;span style=&#34;color: #006699; font-weight: bold&#34;&gt;assert&lt;/span&gt; websocket_ready&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;ok &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color: #336666&#34;&gt;False&lt;/span&gt;
-    &lt;span style=&#34;color: #006699; font-weight: bold&#34;&gt;assert&lt;/span&gt; websocket_ready&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;protocol &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color: #336666&#34;&gt;None&lt;/span&gt; 
+    &lt;span style=&#34;color: #006699; font-weight: bold&#34;&gt;assert&lt;/span&gt; websocket_ready&lt;span style=&#34;color: #555555&#34;&gt;.&lt;/span&gt;protocol &lt;span style=&#34;color: #000000; font-weight: bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color: #336666&#34;&gt;None&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;But not the tests that checked the low level functionality like:&lt;/p&gt;
